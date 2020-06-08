@@ -99,6 +99,9 @@ body {
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
     backface-visibility: hidden; }
+    @media (min-width: 64em) {
+      .heading-primary--main {
+        margin-bottom: 10%; } }
   .heading-primary--sub {
     display: block;
     font-size: 20px;
@@ -116,7 +119,7 @@ body {
         font-size: 10px; } }
     @media (min-width: 64em) {
       .heading-primary--sub {
-        margin-bottom: 2%; } }
+        margin-bottom: 5%; } }
 
 .u-center-text {
   text-align: center; }

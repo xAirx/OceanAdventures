@@ -196,6 +196,9 @@ body {
     }
     @include breakpoint(minimobileonly) {
     }
+    @include breakpoint(laptop) {
+      margin-bottom: 10%;
+    }
   }
 
   &--sub {
@@ -214,7 +217,7 @@ body {
       font-size: 10px;
     }
     @include breakpoint(laptop) {
-      margin-bottom: 2%;
+      margin-bottom: 5%;
     }
   }
 }
