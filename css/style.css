@@ -187,6 +187,14 @@ body {
       .btn--about {
         display: none;
         margin-bottom: 10%; } }
+    @media (min-width: 64em) {
+      .btn--about {
+        display: block;
+        margin-bottom: 60%; } }
+    @media (min-width: 70em) {
+      .btn--about {
+        display: block;
+        margin-bottom: 60%; } }
 
 .section-about {
   position: relative;
@@ -233,16 +241,26 @@ body {
       margin-top: 0%; } }
   @media (max-width: 21.5em) {
     .section-cards {
+      clip-path: none; } }
+  @media (min-width: 50em) {
+    .section-cards {
+      clip-path: none; } }
+  @media (min-width: 44.5em) {
+    .section-cards {
       clip-path: none;
       margin-top: 0%; } }
   @media (min-width: 50em) {
     .section-cards {
       clip-path: none;
       margin-top: 0%; } }
-  @media (min-width: 44.5em) {
+  @media (min-width: 64em) {
     .section-cards {
-      clip-path: none;
-      margin-top: 0%; } }
+      clip-path: polygon(0 31%, 100% 0, 100% 69%, 0% 100%);
+      margin-top: -30%; } }
+  @media (min-width: 70em) {
+    .section-cards {
+      clip-path: polygon(0 31%, 100% 0, 100% 69%, 0% 100%);
+      margin-top: -30%; } }
 
 .overlay {
   background-color: darkslategray;
@@ -266,9 +284,33 @@ body {
     align-items: center;
     margin: 0 auto;
     margin-top: 0px;
-    padding-top: 300px;
+    padding-top: 450px;
     padding-bottom: 300px;
     width: 80%; }
+    @media (max-width: 44.5em) {
+      .content--cards {
+        padding-top: 100px;
+        padding-bottom: 100px; } }
+    @media (max-width: 21.5em) {
+      .content--cards {
+        padding-top: 100px;
+        padding-bottom: 100px; } }
+    @media (min-width: 44.5em) {
+      .content--cards {
+        padding-top: 100px;
+        padding-bottom: 100px; } }
+    @media (min-width: 50em) {
+      .content--cards {
+        padding-top: 100px;
+        padding-bottom: 100px; } }
+    @media (min-width: 64em) {
+      .content--cards {
+        padding-top: 450px;
+        padding-bottom: 300px; } }
+    @media (min-width: 70em) {
+      .content--cards {
+        padding-top: 450px;
+        padding-bottom: 300px; } }
 
 .heading-secondary {
   color: white; }
@@ -343,7 +385,7 @@ body {
     margin-bottom: 3rem; }
 
 .image-wrapper {
-  margin-top: 40%;
+  margin-top: -50%;
   /*  background: red;
   margin: 0 auto;
   display: flex;
