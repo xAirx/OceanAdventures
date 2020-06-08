@@ -298,66 +298,60 @@ body {
     font-size: 1.5rem;
     font-weight: 100;
     color: white; }
-  .section-about--image1 {
-    position: absolute;
-    top: 47%;
-    left: 63%; }
-    @media (max-width: 44.5em) {
-      .section-about--image1 {
-        position: inherit;
-        left: auto;
-        /*    width: 100%; */ } }
-    @media (max-width: 21.5em) {
-      .section-about--image1 {
-        /*    width: 100%; */
-        position: inherit;
-        left: auto; } }
-    @media (min-width: 44.5em) {
-      .section-about--image1 {
-        position: inherit;
-        /*    width: 100%; */ } }
-    @media (min-width: 50em) {
-      .section-about--image1 {
-        /*    width: 100%; */
-        position: inherit; } }
+  @media (max-width: 44.5em) {
+    .section-about--image1 {
+      position: inherit;
+      left: auto;
+      /*    width: 100%; */ } }
+  @media (max-width: 21.5em) {
+    .section-about--image1 {
+      /*    width: 100%; */
+      position: inherit;
+      left: auto; } }
+  @media (min-width: 44.5em) {
+    .section-about--image1 {
+      position: inherit;
+      /*    width: 100%; */ } }
+  @media (min-width: 50em) {
+    .section-about--image1 {
+      /*    width: 100%; */
+      position: inherit; } }
   @media (min-width: 64em) {
     .section-about img {
       width: 100%; } }
-  .section-about--image2 {
-    position: absolute;
-    top: 49%;
-    left: 70%; }
-    @media (max-width: 44.5em) {
-      .section-about--image2 {
-        position: inherit;
-        left: auto;
-        /*    width: 100%; */ } }
-    @media (max-width: 21.5em) {
-      .section-about--image2 {
-        /*    width: 100%; */
-        position: inherit;
-        left: auto; } }
-    @media (min-width: 44.5em) {
-      .section-about--image2 {
-        position: inherit;
-        /*    width: 100%; */ } }
-  .section-about--image3 {
-    position: absolute;
-    top: 55%;
-    left: 83%; }
-    @media (max-width: 44.5em) {
-      .section-about--image3 {
-        position: inherit;
-        left: auto;
-        /*    width: 100%; */ } }
-    @media (max-width: 21.5em) {
-      .section-about--image3 {
-        /*    width: 100%; */
-        position: inherit; } }
-    @media (min-width: 44.5em) {
-      .section-about--image3 {
-        position: inherit;
-        /*    width: 100%; */ } }
+  @media (max-width: 44.5em) {
+    .section-about--image2 {
+      position: inherit;
+      left: auto;
+      /*    width: 100%; */ } }
+  @media (max-width: 21.5em) {
+    .section-about--image2 {
+      /*    width: 100%; */
+      position: inherit;
+      left: auto; } }
+  @media (min-width: 44.5em) {
+    .section-about--image2 {
+      position: inherit;
+      /*    width: 100%; */ } }
+  @media (min-width: 64em) {
+    .section-about--image2 {
+      /*    width: 100%; */ } }
+  @media (max-width: 44.5em) {
+    .section-about--image3 {
+      position: inherit;
+      left: auto;
+      /*    width: 100%; */ } }
+  @media (max-width: 21.5em) {
+    .section-about--image3 {
+      /*    width: 100%; */
+      position: inherit; } }
+  @media (min-width: 44.5em) {
+    .section-about--image3 {
+      position: inherit;
+      /*    width: 100%; */ } }
+  @media (min-width: 64em) {
+    .section-about--image3 {
+      /*    width: 100%; */ } }
 
 .overlay {
   background-color: navy;
@@ -394,15 +388,33 @@ body {
   width: 50%;
 }
  */
-@media (max-width: 44.5em) {
-  .wrapper-text {
-    padding-left: 20%;
-    padding-right: 20%; } }
-
 @media (max-width: 21.5em) {
   .wrapper-text {
-    padding-left: 20%;
-    padding-right: 20%; } }
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-bottom: 5%; } }
+
+@media (max-width: 44.5em) {
+  .wrapper-text {
+    padding-left: 36%;
+    padding-right: 36%;
+    margin-bottom: 5%; } }
+
+@media (min-width: 44.5em) {
+  .wrapper-text {
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-bottom: 5%; } }
+
+@media (min-width: 70em) {
+  .wrapper-text {
+    margin-bottom: 1%; } }
+
+@media (min-width: 64em) {
+  .wrapper-text {
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 1%; } }
 
 .row {
   max-width: 114rem;

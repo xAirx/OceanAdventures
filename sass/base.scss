@@ -419,9 +419,6 @@ body {
     color: white;
   }
   &--image1 {
-    position: absolute;
-    top: 47%;
-    left: 63%;
     @include breakpoint(mobileonly) {
       position: inherit;
       left: auto;
@@ -450,9 +447,6 @@ body {
   }
 
   &--image2 {
-    position: absolute;
-    top: 49%;
-    left: 70%;
     @include breakpoint(mobileonly) {
       position: inherit;
       left: auto;
@@ -467,6 +461,9 @@ body {
     @include breakpoint(phablet) {
       position: inherit;
 
+      /*    width: 100%; */
+    }
+    @include breakpoint(laptop) {
       /*    width: 100%; */
     }
   }
@@ -481,9 +478,6 @@ body {
     } */
 
   &--image3 {
-    position: absolute;
-    top: 55%;
-    left: 83%;
     @include breakpoint(mobileonly) {
       position: inherit;
       left: auto;
@@ -497,6 +491,9 @@ body {
     @include breakpoint(phablet) {
       position: inherit;
 
+      /*    width: 100%; */
+    }
+    @include breakpoint(laptop) {
       /*    width: 100%; */
     }
   }
@@ -555,13 +552,29 @@ body {
 }
  */
 .wrapper-text {
-  @include breakpoint(mobileonly) {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
   @include breakpoint(minimobileonly) {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-bottom: 5%;
+  }
+
+  @include breakpoint(mobileonly) {
+    padding-left: 36%;
+    padding-right: 36%;
+    margin-bottom: 5%;
+  }
+  @include breakpoint(phablet) {
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-bottom: 5%;
+  }
+  @include breakpoint(desktop) {
+    margin-bottom: 1%;
+  }
+  @include breakpoint(laptop) {
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 1%;
   }
 }
 
