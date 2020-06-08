@@ -279,6 +279,28 @@ body {
     margin: 0 auto;
     margin-top: 5%;
     margin-bottom: 75%;
+    @include breakpoint(mobileonly) {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-bottom: 10%;
+    }
+    @include breakpoint(minimobileonly) {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-bottom: 10%;
+    }
+
+    @include breakpoint(phablet) {
+      display: none;
+      margin-bottom: 10%;
+    }
+
+    @include breakpoint(tablet) {
+      display: none;
+      margin-bottom: 10%;
+    }
   }
 }
 
@@ -327,11 +349,31 @@ body {
   background-blend-mode: darken;
   background-image: url("http://awesomeocean.com/wp-content/uploads/2016/02/Scuba-Diving-Sabah.jpg");
   background-size: cover;
+  @include breakpoint(mobileonly) {
+    clip-path: none;
+    margin-top: 0%;
+  }
+  @include breakpoint(minimobileonly) {
+    clip-path: none;
+    margin-top: 0%;
+  }
+  @include breakpoint(tablet) {
+    clip-path: none;
+    margin-top: 0%;
+  }
+  @include breakpoint(phablet) {
+    clip-path: none;
+    margin-top: 0%;
+  }
 }
 
 .overlay {
-  background-color: navy;
-  opacity: 0.66;
+  background-color: darkslategray;
+  opacity: 0.8;
+
+  &--cards {
+    opacity: 0.89;
+  }
 }
 
 .content {
@@ -392,6 +434,54 @@ body {
     margin-bottom: 3rem;
   }
 }
+
+.card {
+  background-color: white;
+  opacity: 0.8;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: $color-black;
+  box-shadow: 0 1rem 2rem rgba($color-black, 1);
+  z-index: 10;
+  @include breakpoint(mobileonly) {
+    margin-bottom: 10%;
+  }
+  @include breakpoint(minimobileonly) {
+    margin-bottom: 10%;
+  }
+  @include breakpoint(tablet) {
+    margin-bottom: 10%;
+  }
+  @include breakpoint(phablet) {
+    margin-bottom: 10%;
+  }
+  .heading-tertiary {
+    color: $color-black;
+    font-size: $default-font-size;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+}
+
+.cardimage {
+  display: inline-block;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  display: block;
+}
+
+.minicard {
+  color: black;
+  font-size: $default-font-size;
+  margin-bottom: 20%;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
 ///////////////////////////////////////////////////////////////
 //////////////////////////////////////////GRID//////////////////////
 
@@ -406,6 +496,26 @@ body {
   flex-wrap: wrap;
   position:absolute */
   position: relative;
+  @include breakpoint(minimobileonly) {
+    display: none;
+  }
+
+  @include breakpoint(mobileonly) {
+    display: none;
+  }
+  @include breakpoint(phablet) {
+    display: none;
+  }
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
+  @include breakpoint(laptop) {
+    display: block;
+  }
+  @include breakpoint(desktop) {
+    display: block;
+  }
 
   &__image {
     position: absolute;
@@ -448,7 +558,7 @@ body {
 }
  */
 .wrapper-text {
-  @include breakpoint(minimobileonly) {
+  /* @include breakpoint(minimobileonly) {
     padding-left: 30%;
     padding-right: 30%;
     margin-bottom: 5%;
@@ -458,13 +568,19 @@ body {
     padding-left: 9%;
     padding-right: 9%;
     margin-bottom: 5%;
-  }
+  } */
 }
 
 .row {
   max-width: $grid-width;
   color: $color-grey-dark;
-  margin: 0 auto;
+  color: #777;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
   //gutter
 
   /* &:last-child {
@@ -489,9 +605,9 @@ body {
   [class^="col-"] {
     /*  background-color: orangered; */
     float: left;
-    &:not(:last-child) {
+    /* &:not(:last-child) {
       margin-right: $gutter-horizontal;
-    }
+    } */
   }
 
   //Will select any classes that contain this part col
@@ -583,10 +699,10 @@ body {
       width: 100%;
     }
     @include breakpoint(phablet) {
-      width: 100%;
+      width: 49%;
     }
     @include breakpoint(tablet) {
-      width: 100%;
+      width: 49%;
     }
     @include breakpoint(laptop) {
       width: calc((100% - 3 * #{$gutter-horizontal}) / 4);

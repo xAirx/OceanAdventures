@@ -167,6 +167,26 @@ body {
     margin: 0 auto;
     margin-top: 5%;
     margin-bottom: 75%; }
+    @media (max-width: 44.5em) {
+      .btn--about {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 10%; } }
+    @media (max-width: 21.5em) {
+      .btn--about {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 10%; } }
+    @media (min-width: 44.5em) {
+      .btn--about {
+        display: none;
+        margin-bottom: 10%; } }
+    @media (min-width: 50em) {
+      .btn--about {
+        display: none;
+        margin-bottom: 10%; } }
 
 .section-about {
   position: relative;
@@ -207,10 +227,28 @@ body {
   background-blend-mode: darken;
   background-image: url("http://awesomeocean.com/wp-content/uploads/2016/02/Scuba-Diving-Sabah.jpg");
   background-size: cover; }
+  @media (max-width: 44.5em) {
+    .section-cards {
+      clip-path: none;
+      margin-top: 0%; } }
+  @media (max-width: 21.5em) {
+    .section-cards {
+      clip-path: none;
+      margin-top: 0%; } }
+  @media (min-width: 50em) {
+    .section-cards {
+      clip-path: none;
+      margin-top: 0%; } }
+  @media (min-width: 44.5em) {
+    .section-cards {
+      clip-path: none;
+      margin-top: 0%; } }
 
 .overlay {
-  background-color: navy;
-  opacity: 0.66; }
+  background-color: darkslategray;
+  opacity: 0.8; }
+  .overlay--cards {
+    opacity: 0.89; }
 
 .content {
   width: 80%;
@@ -262,6 +300,48 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+.card {
+  background-color: white;
+  opacity: 0.8;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #000;
+  box-shadow: 0 1rem 2rem black;
+  z-index: 10; }
+  @media (max-width: 44.5em) {
+    .card {
+      margin-bottom: 10%; } }
+  @media (max-width: 21.5em) {
+    .card {
+      margin-bottom: 10%; } }
+  @media (min-width: 50em) {
+    .card {
+      margin-bottom: 10%; } }
+  @media (min-width: 44.5em) {
+    .card {
+      margin-bottom: 10%; } }
+  .card .heading-tertiary {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 100;
+    text-transform: uppercase; }
+
+.cardimage {
+  display: inline-block;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  display: block; }
+
+.minicard {
+  color: black;
+  font-size: 1.6rem;
+  margin-bottom: 20%; }
+  .minicard:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .image-wrapper {
   margin-top: 40%;
   /*  background: red;
@@ -273,6 +353,24 @@ body {
   flex-wrap: wrap;
   position:absolute */
   position: relative; }
+  @media (max-width: 21.5em) {
+    .image-wrapper {
+      display: none; } }
+  @media (max-width: 44.5em) {
+    .image-wrapper {
+      display: none; } }
+  @media (min-width: 44.5em) {
+    .image-wrapper {
+      display: none; } }
+  @media (min-width: 50em) {
+    .image-wrapper {
+      display: none; } }
+  @media (min-width: 64em) {
+    .image-wrapper {
+      display: block; } }
+  @media (min-width: 70em) {
+    .image-wrapper {
+      display: block; } }
   .image-wrapper__image {
     position: absolute;
     width: 75%;
@@ -302,22 +400,28 @@ body {
   width: 50%;
 }
  */
-@media (max-width: 21.5em) {
-  .wrapper-text {
+.wrapper-text {
+  /* @include breakpoint(minimobileonly) {
     padding-left: 30%;
     padding-right: 30%;
-    margin-bottom: 5%; } }
+    margin-bottom: 5%;
+  }
 
-@media (max-width: 44.5em) {
-  .wrapper-text {
+  @include breakpoint(mobileonly) {
     padding-left: 9%;
     padding-right: 9%;
-    margin-bottom: 5%; } }
+    margin-bottom: 5%;
+  } */ }
 
 .row {
   max-width: 114rem;
   color: #777;
-  margin: 0 auto;
+  color: #777;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   /* &:last-child {
     margin-bottom: 0;
   } */
@@ -336,9 +440,10 @@ body {
     clear: both; }
   .row [class^="col-"] {
     /*  background-color: orangered; */
-    float: left; }
-    .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
+    float: left;
+    /* &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    } */ }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
     @media (max-width: 44.5em) {
@@ -409,10 +514,10 @@ body {
         width: 100%; } }
     @media (min-width: 44.5em) {
       .row .col-1-of-4 {
-        width: 100%; } }
+        width: 49%; } }
     @media (min-width: 50em) {
       .row .col-1-of-4 {
-        width: 100%; } }
+        width: 49%; } }
     @media (min-width: 64em) {
       .row .col-1-of-4 {
         width: calc((100% - 3 * 6rem) / 4); } }
