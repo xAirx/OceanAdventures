@@ -186,15 +186,15 @@ body {
     @media (min-width: 50em) {
       .btn--about {
         display: none;
-        margin-bottom: 10%; } }
+        margin-bottom: 20%; } }
     @media (min-width: 64em) {
       .btn--about {
         display: block;
-        margin-bottom: 60%; } }
+        margin-bottom: 81%; } }
     @media (min-width: 70em) {
       .btn--about {
         display: block;
-        margin-bottom: 60%; } }
+        margin-bottom: 81%; } }
 
 .section-about {
   position: relative;
@@ -256,11 +256,11 @@ body {
   @media (min-width: 64em) {
     .section-cards {
       clip-path: polygon(0 31%, 100% 0, 100% 69%, 0% 100%);
-      margin-top: -30%; } }
+      margin-top: -40%; } }
   @media (min-width: 70em) {
     .section-cards {
       clip-path: polygon(0 31%, 100% 0, 100% 69%, 0% 100%);
-      margin-top: -30%; } }
+      margin-top: -35%; } }
 
 .overlay {
   background-color: darkslategray;
@@ -385,7 +385,7 @@ body {
     margin-bottom: 3rem; }
 
 .image-wrapper {
-  margin-top: -50%;
+  margin-top: -55%;
   /*  background: red;
   margin: 0 auto;
   display: flex;
