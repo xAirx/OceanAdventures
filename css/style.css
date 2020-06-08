@@ -1,10 +1,11 @@
-* {
-  /* opacity: 1; */
-  visibility: visibile; }
+/* * {
+  opacity: 1;
+  visibility: visibile;
+}
 
 * {
-  border: 1px solid #f00; }
-
+  border: 1px solid #f00;
+} */
 /*********************
 BREAKPOINTS
 *********************/
@@ -138,7 +139,7 @@ body {
     font-weight: 100;
     font-size: 4rem;
     color: white;
-    margin-bottom: 8px;
+    margin-bottom: 48px;
     letter-spacing: 6px;
     margin-top: 400px; }
     @media (max-width: 44.5em) {
@@ -162,6 +163,7 @@ body {
 
 .btn {
   color: white;
+  border: 1px solid white;
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px 40px;
@@ -181,6 +183,7 @@ body {
     transform: translateY(-1px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
   .btn--about {
+    border: 1px solid white;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
@@ -230,6 +233,7 @@ body {
       transform: translateY(-1px);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
   .btn--footer {
+    border: 1px solid white;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
@@ -250,6 +254,7 @@ body {
       transform: translateY(-1px);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
   .btn--card {
+    border: 1px solid black;
     color: black;
     text-transform: uppercase;
     text-decoration: none;
@@ -294,6 +299,7 @@ body {
       transform: translateY(-1px);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
   .btn--tours {
+    border: 1px solid white;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
@@ -587,7 +593,7 @@ body {
   margin-bottom: 4rem; }
 
 .u-margin-bottom-large {
-  margin-bottom: 8rem; }
+  margin-bottom: 10rem; }
 
 .paragraph {
   color: white;
@@ -672,6 +678,7 @@ body {
 
 .image-wrapper {
   margin-top: -55%;
+  margin-left: 10%;
   /*  background: red;
   margin: 0 auto;
   display: flex;

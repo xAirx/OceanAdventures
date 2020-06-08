@@ -29,14 +29,14 @@ $default-font-size: 1.6rem;
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
 //////////////// DEBUGGING OVERFLOW ISSUES /////////
-* {
-  /* opacity: 1; */
+/* * {
+  opacity: 1;
   visibility: visibile;
 }
 
 * {
   border: 1px solid #f00;
-}
+} */
 
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
@@ -242,7 +242,7 @@ body {
     font-weight: 100;
     font-size: 4rem;
     color: white;
-    margin-bottom: 8px;
+    margin-bottom: 48px;
     letter-spacing: 6px;
     margin-top: 400px;
     @include breakpoint(mobileonly) {
@@ -272,6 +272,7 @@ body {
 
 .btn {
   color: white;
+  border: 1px solid white;
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px 40px;
@@ -296,6 +297,8 @@ body {
   }
 
   &--about {
+    border: 1px solid white;
+
     color: white;
     text-transform: uppercase;
     text-decoration: none;
@@ -353,6 +356,8 @@ body {
   }
 
   &--footer {
+    border: 1px solid white;
+
     color: white;
     text-transform: uppercase;
     text-decoration: none;
@@ -379,6 +384,8 @@ body {
   }
 
   &--card {
+    border: 1px solid black;
+
     color: black;
     text-transform: uppercase;
     text-decoration: none;
@@ -431,6 +438,8 @@ body {
     }
   }
   &--tours {
+    border: 1px solid white;
+
     color: white;
     text-transform: uppercase;
     text-decoration: none;
@@ -755,7 +764,7 @@ body {
   margin-bottom: 4rem;
 }
 .u-margin-bottom-large {
-  margin-bottom: 8rem;
+  margin-bottom: 10rem;
 }
 
 .paragraph {
@@ -857,6 +866,7 @@ body {
 
 .image-wrapper {
   margin-top: -55%;
+  margin-left: 10%;
   /*  background: red;
   margin: 0 auto;
   display: flex;
