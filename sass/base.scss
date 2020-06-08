@@ -213,6 +213,9 @@ body {
     @include breakpoint(minimobileonly) {
       font-size: 10px;
     }
+    @include breakpoint(laptop) {
+      margin-bottom: 2%;
+    }
   }
 }
 
@@ -231,6 +234,15 @@ body {
 }
 ///////////////////////////////////////////////////////////////
 /////////////////////////////BUTTONS///////////////////////////
+
+.btnwidewrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .btn {
   &:link,
   &:visited {
@@ -263,6 +275,13 @@ body {
     @include breakpoint(tablet) {
       width: 100%;
       margin-bottom: 15%;
+    }
+    @include breakpoint(laptop) {
+      width: 50%;
+      display: block;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin: 0 auto;
     }
   }
 
@@ -583,9 +602,7 @@ body {
   //Will select any class that ends with col dash
 
   /*   [class$="col-"] */
-  .col-1-of-1 {
-    width: 100%;
-  }
+
   .col-1-of-2 {
     width: calc((100% - #{$gutter-horizontal}) / 2);
     @include breakpoint(mobileonly) {

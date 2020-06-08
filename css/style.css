@@ -114,6 +114,9 @@ body {
     @media (max-width: 21.5em) {
       .heading-primary--sub {
         font-size: 10px; } }
+    @media (min-width: 64em) {
+      .heading-primary--sub {
+        margin-bottom: 2%; } }
 
 .u-center-text {
   text-align: center; }
@@ -126,6 +129,13 @@ body {
   color: white;
   margin-bottom: 8px;
   letter-spacing: 6px; }
+
+.btnwidewrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -157,6 +167,13 @@ body {
     .btn:link, .btn:visited {
       width: 100%;
       margin-bottom: 15%; } }
+  @media (min-width: 64em) {
+    .btn:link, .btn:visited {
+      width: 50%;
+      display: block;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin: 0 auto; } }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -409,8 +426,6 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-  .row .col-1-of-1 {
-    width: 100%; }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
     @media (max-width: 44.5em) {
