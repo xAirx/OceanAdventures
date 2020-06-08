@@ -22,6 +22,63 @@ $gutter-horizontal: 6rem;
   }
 }
 
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+//////////////// DEBUGGING OVERFLOW ISSUES /////////
+* {
+  /* opacity: 1 !important; */
+  visibility: visibile !important;
+}
+
+* {
+  border: 1px solid #f00 !important;
+}
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+
+/*********************
+BREAKPOINTS
+*********************/
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 70em) {
+      @content;
+    }
+  } @else if $point == laptop {
+    @media (min-width: 64em) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (min-width: 50em) {
+      @content;
+    }
+  } @else if $point == phablet {
+    @media (min-width: 45.5em) {
+      @content;
+    }
+  } @else if $point == mobileonly {
+    // IHPHONe 6 -> xr xs -> 11 -> pixel xl 2
+    @media (max-width: 42.5em) {
+      @content;
+    }
+  } @else if $point == minimobileonly {
+    //IPHONE 5
+    @media (max-width: 21.5em) {
+      @content;
+    }
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -65,10 +122,32 @@ body {
   background-size: cover;
   background-position: top;
   clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 80%, 0 0);
+  @include breakpoint(mobileonly) {
+    height: 95vh;
+  }
+  @include breakpoint(minimobileonly) {
+    height: 95vh;
+  }
+  @include breakpoint(phablet) {
+    height: 95vh;
+  }
+  @include breakpoint(tablet) {
+    height: 95vh;
+  }
   &__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;
+    @include breakpoint(mobileonly) {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+    }
+    @include breakpoint(minimobileonly) {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+    }
   }
 
   &__text-box {
@@ -98,7 +177,6 @@ body {
 .heading-primary {
   color: $color-white;
   text-transform: uppercase;
-  margin-bottom: 60px;
 
   &--main {
     /*  A span is already an inline element so we can use block here. */
@@ -113,6 +191,11 @@ body {
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
     backface-visibility: hidden;
+
+    @include breakpoint(mobileonly) {
+    }
+    @include breakpoint(minimobileonly) {
+    }
   }
 
   &--sub {
@@ -124,7 +207,12 @@ body {
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
     backface-visibility: hidden;
-    margin-top: 4%;
+    @include breakpoint(mobileonly) {
+      font-size: 10px;
+    }
+    @include breakpoint(minimobileonly) {
+      font-size: 10px;
+    }
   }
 }
 
@@ -153,10 +241,29 @@ body {
     /*  border-radius: 100px; */
     font-weight: 400;
     transition: all 0.2s;
-    margin-left: 20px;
-    width: 50%;
+    width: 65%;
     text-align: center;
-    margin: 0 auto;
+    margin-bottom: -15%;
+    margin-top: 14%;
+
+    @include breakpoint(mobileonly) {
+      margin-bottom: 15%;
+      margin-top: 14%;
+      width: 99%;
+    }
+    @include breakpoint(minimobileonly) {
+      margin-bottom: 15%;
+      margin-top: 14%;
+      width: 99%;
+    }
+    @include breakpoint(phablet) {
+      width: 99%;
+      margin-bottom: 15%;
+    }
+    @include breakpoint(tablet) {
+      width: 100%;
+      margin-bottom: 15%;
+    }
   }
 
   &:hover {
@@ -260,7 +367,20 @@ body {
   background-image: url("https://d.newsweek.com/en/full/1506224/water.jpg");
   background-size: cover;
   margin-top: -370px;
-  height: 1620px;
+  /*   height: 1620px; */
+
+  @include breakpoint(mobileonly) {
+    clip-path: none;
+  }
+  @include breakpoint(minimobileonly) {
+    clip-path: none;
+  }
+  @include breakpoint(tablet) {
+    clip-path: none;
+  }
+  @include breakpoint(phablet) {
+    clip-path: none;
+  }
 
   &--subheader {
     margin-bottom: 10%;
@@ -276,13 +396,117 @@ body {
     font-weight: 100;
     color: white;
   }
+  &--image1 {
+    position: absolute;
+    top: 44%;
+    left: 79%;
+    @include breakpoint(mobileonly) {
+      position: inherit !important;
+      left: auto;
+
+      /*    width: 100% !important; */
+    }
+    @include breakpoint(minimobileonly) {
+      /*    width: 100% !important; */
+      position: inherit !important;
+      left: auto;
+    }
+    @include breakpoint(phablet) {
+      position: inherit !important;
+
+      /*    width: 100% !important; */
+    }
+    @include breakpoint(tablet) {
+      /*    width: 100% !important; */
+      position: inherit !important;
+    }
+  }
+  /* img {
+    width: 370px;
+    @include breakpoint(tablet) {
+      width: auto;
+    }
+    @include breakpoint(phablet) {
+      width: auto;
+    }
+  } */
+  &--image2 {
+    position: absolute;
+    top: 49%;
+    left: 70%;
+    @include breakpoint(mobileonly) {
+      position: inherit !important;
+      left: auto;
+
+      /*    width: 100% !important; */
+    }
+    @include breakpoint(minimobileonly) {
+      /*    width: 100% !important; */
+      position: inherit !important;
+      left: auto;
+    }
+    @include breakpoint(phablet) {
+      position: inherit !important;
+
+      /*    width: 100% !important; */
+    }
+    @include breakpoint(tablet) {
+      /*    width: 100% !important; */
+      position: inherit !important;
+    }
+  }
+  /* img {
+      width: auto;;
+      @include breakpoint(tablet) {
+        width: auto;
+      }
+      @include breakpoint(phablet) {
+        width: auto;
+      }
+    } */
+
+  &--image3 {
+    position: absolute;
+    top: 55%;
+    left: 83%;
+    @include breakpoint(mobileonly) {
+      position: inherit !important;
+      left: auto;
+
+      /*    width: 100% !important; */
+    }
+    @include breakpoint(minimobileonly) {
+      /*    width: 100% !important; */
+      position: inherit !important;
+    }
+    @include breakpoint(phablet) {
+      position: inherit !important;
+
+      /*    width: 100% !important; */
+    }
+    @include breakpoint(tablet) {
+      /*    width: 100% !important; */
+      position: inherit !important;
+      left: auto;
+    }
+  }
+
+  /*    img {
+
+      @include breakpoint(tablet) {
+        width: auto;
+      }
+      @include breakpoint(phablet) {
+        width: auto;
+      }
+    } */
 }
 
 .overlay {
   background-color: navy;
   opacity: 0.66;
-  height: 1620px;
 }
+
 .content {
   width: 80%;
   display: flex;
@@ -295,10 +519,37 @@ body {
 
   .heading-secondary {
     color: white;
+    @include breakpoint(mobileonly) {
+      font-size: 2rem;
+    }
+    @include breakpoint(minimobileonly) {
+      font-size: 2rem;
+    }
   }
 }
 ///////////////////////////////////////////////////////////////
 //////////////////////////////////////////GRID//////////////////////
+
+.imagewrapper {
+  background: red;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.wrapper-text {
+  @include breakpoint(mobileonly) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  @include breakpoint(minimobileonly) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
 
 .row {
   max-width: $grid-width;
@@ -343,20 +594,96 @@ body {
 
   .col-1-of-2 {
     width: calc((100% - #{$gutter-horizontal}) / 2);
+    @include breakpoint(mobileonly) {
+      width: 100%;
+    }
+    @include breakpoint(minimobileonly) {
+      width: 100%;
+    }
+    @include breakpoint(phablet) {
+      width: 100%;
+    }
+    @include breakpoint(tablet) {
+      width: 100%;
+    }
+    @include breakpoint(laptop) {
+      width: calc((100% - #{$gutter-horizontal}) / 2);
+    }
+    @include breakpoint(desktop) {
+      width: calc((100% - #{$gutter-horizontal}) / 2);
+    }
   }
 
   .col-1-of-3 {
     width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+    @include breakpoint(mobileonly) {
+      width: 100%;
+    }
+    @include breakpoint(minimobileonly) {
+      width: 100%;
+    }
+    @include breakpoint(phablet) {
+      width: 100%;
+    }
+    @include breakpoint(tablet) {
+      width: 100%;
+    }
+    @include breakpoint(laptop) {
+      width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+    }
+    @include breakpoint(desktop) {
+      width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+    }
   }
 
   .col-2-of-3 {
     width: calc(
       2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
     );
+    @include breakpoint(mobileonly) {
+      width: 100%;
+    }
+    @include breakpoint(minimobileonly) {
+      width: 100%;
+    }
+    @include breakpoint(phablet) {
+      width: 100%;
+    }
+    @include breakpoint(tablet) {
+      width: 100%;
+    }
+    @include breakpoint(laptop) {
+      width: calc(
+        2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
+      );
+    }
+    @include breakpoint(desktop) {
+      width: calc(
+        2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
+      );
+    }
   }
 
   .col-1-of-4 {
     width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+    @include breakpoint(mobileonly) {
+      width: 100%;
+    }
+    @include breakpoint(minimobileonly) {
+      width: 100%;
+    }
+    @include breakpoint(phablet) {
+      width: 100%;
+    }
+    @include breakpoint(tablet) {
+      width: 100%;
+    }
+    @include breakpoint(laptop) {
+      width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+    }
+    @include breakpoint(desktop) {
+      width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+    }
   }
 }
 

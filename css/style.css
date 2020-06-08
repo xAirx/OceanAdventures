@@ -1,3 +1,13 @@
+* {
+  /* opacity: 1 !important; */
+  visibility: visibile !important; }
+
+* {
+  border: 1px solid #f00 !important; }
+
+/*********************
+BREAKPOINTS
+*********************/
 *,
 *::after,
 *::before {
@@ -28,10 +38,32 @@ body {
   background-size: cover;
   background-position: top;
   clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 80%, 0 0); }
+  @media (max-width: 42.5em) {
+    .header {
+      height: 95vh; } }
+  @media (max-width: 21.5em) {
+    .header {
+      height: 95vh; } }
+  @media (min-width: 45.5em) {
+    .header {
+      height: 95vh; } }
+  @media (min-width: 50em) {
+    .header {
+      height: 95vh; } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem; }
+    @media (max-width: 42.5em) {
+      .header__logo-box {
+        position: absolute;
+        top: 1rem;
+        left: 1rem; } }
+    @media (max-width: 21.5em) {
+      .header__logo-box {
+        position: absolute;
+        top: 1rem;
+        left: 1rem; } }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -53,8 +85,7 @@ body {
 
 .heading-primary {
   color: #fff;
-  text-transform: uppercase;
-  margin-bottom: 60px; }
+  text-transform: uppercase; }
   .heading-primary--main {
     /*  A span is already an inline element so we can use block here. */
     /*  block elements
@@ -76,8 +107,13 @@ body {
     animation-name: moveInRight;
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
-    backface-visibility: hidden;
-    margin-top: 4%; }
+    backface-visibility: hidden; }
+    @media (max-width: 42.5em) {
+      .heading-primary--sub {
+        font-size: 10px; } }
+    @media (max-width: 21.5em) {
+      .heading-primary--sub {
+        font-size: 10px; } }
 
 .u-center-text {
   text-align: center; }
@@ -99,10 +135,28 @@ body {
   /*  border-radius: 100px; */
   font-weight: 400;
   transition: all 0.2s;
-  margin-left: 20px;
-  width: 50%;
+  width: 65%;
   text-align: center;
-  margin: 0 auto; }
+  margin-bottom: -15%;
+  margin-top: 14%; }
+  @media (max-width: 42.5em) {
+    .btn:link, .btn:visited {
+      margin-bottom: 15%;
+      margin-top: 14%;
+      width: 99%; } }
+  @media (max-width: 21.5em) {
+    .btn:link, .btn:visited {
+      margin-bottom: 15%;
+      margin-top: 14%;
+      width: 99%; } }
+  @media (min-width: 45.5em) {
+    .btn:link, .btn:visited {
+      width: 99%;
+      margin-bottom: 15%; } }
+  @media (min-width: 50em) {
+    .btn:link, .btn:visited {
+      width: 100%;
+      margin-bottom: 15%; } }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -171,7 +225,46 @@ body {
   background-image: url("https://d.newsweek.com/en/full/1506224/water.jpg");
   background-size: cover;
   margin-top: -370px;
-  height: 1620px; }
+  /*   height: 1620px; */
+  /* img {
+    width: 370px;
+    @include breakpoint(tablet) {
+      width: auto;
+    }
+    @include breakpoint(phablet) {
+      width: auto;
+    }
+  } */
+  /* img {
+      width: auto;;
+      @include breakpoint(tablet) {
+        width: auto;
+      }
+      @include breakpoint(phablet) {
+        width: auto;
+      }
+    } */
+  /*    img {
+
+      @include breakpoint(tablet) {
+        width: auto;
+      }
+      @include breakpoint(phablet) {
+        width: auto;
+      }
+    } */ }
+  @media (max-width: 42.5em) {
+    .section-about {
+      clip-path: none; } }
+  @media (max-width: 21.5em) {
+    .section-about {
+      clip-path: none; } }
+  @media (min-width: 50em) {
+    .section-about {
+      clip-path: none; } }
+  @media (min-width: 45.5em) {
+    .section-about {
+      clip-path: none; } }
   .section-about--subheader {
     margin-bottom: 10%;
     margin-top: 15%;
@@ -183,11 +276,76 @@ body {
     font-size: 1.5rem;
     font-weight: 100;
     color: white; }
+  .section-about--image1 {
+    position: absolute;
+    top: 44%;
+    left: 79%; }
+    @media (max-width: 42.5em) {
+      .section-about--image1 {
+        position: inherit !important;
+        left: auto;
+        /*    width: 100% !important; */ } }
+    @media (max-width: 21.5em) {
+      .section-about--image1 {
+        /*    width: 100% !important; */
+        position: inherit !important;
+        left: auto; } }
+    @media (min-width: 45.5em) {
+      .section-about--image1 {
+        position: inherit !important;
+        /*    width: 100% !important; */ } }
+    @media (min-width: 50em) {
+      .section-about--image1 {
+        /*    width: 100% !important; */
+        position: inherit !important; } }
+  .section-about--image2 {
+    position: absolute;
+    top: 49%;
+    left: 70%; }
+    @media (max-width: 42.5em) {
+      .section-about--image2 {
+        position: inherit !important;
+        left: auto;
+        /*    width: 100% !important; */ } }
+    @media (max-width: 21.5em) {
+      .section-about--image2 {
+        /*    width: 100% !important; */
+        position: inherit !important;
+        left: auto; } }
+    @media (min-width: 45.5em) {
+      .section-about--image2 {
+        position: inherit !important;
+        /*    width: 100% !important; */ } }
+    @media (min-width: 50em) {
+      .section-about--image2 {
+        /*    width: 100% !important; */
+        position: inherit !important; } }
+  .section-about--image3 {
+    position: absolute;
+    top: 55%;
+    left: 83%; }
+    @media (max-width: 42.5em) {
+      .section-about--image3 {
+        position: inherit !important;
+        left: auto;
+        /*    width: 100% !important; */ } }
+    @media (max-width: 21.5em) {
+      .section-about--image3 {
+        /*    width: 100% !important; */
+        position: inherit !important; } }
+    @media (min-width: 45.5em) {
+      .section-about--image3 {
+        position: inherit !important;
+        /*    width: 100% !important; */ } }
+    @media (min-width: 50em) {
+      .section-about--image3 {
+        /*    width: 100% !important; */
+        position: inherit !important;
+        left: auto; } }
 
 .overlay {
   background-color: navy;
-  opacity: 0.66;
-  height: 1620px; }
+  opacity: 0.66; }
 
 .content {
   width: 80%;
@@ -200,6 +358,31 @@ body {
   padding-top: 400px; }
   .content .heading-secondary {
     color: white; }
+    @media (max-width: 42.5em) {
+      .content .heading-secondary {
+        font-size: 2rem; } }
+    @media (max-width: 21.5em) {
+      .content .heading-secondary {
+        font-size: 2rem; } }
+
+.imagewrapper {
+  background: red;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+@media (max-width: 42.5em) {
+  .wrapper-text {
+    padding-left: 20%;
+    padding-right: 20%; } }
+
+@media (max-width: 21.5em) {
+  .wrapper-text {
+    padding-left: 20%;
+    padding-right: 20%; } }
 
 .row {
   max-width: 114rem;
@@ -228,12 +411,84 @@ body {
       margin-right: 6rem; }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
+    @media (max-width: 42.5em) {
+      .row .col-1-of-2 {
+        width: 100%; } }
+    @media (max-width: 21.5em) {
+      .row .col-1-of-2 {
+        width: 100%; } }
+    @media (min-width: 45.5em) {
+      .row .col-1-of-2 {
+        width: 100%; } }
+    @media (min-width: 50em) {
+      .row .col-1-of-2 {
+        width: 100%; } }
+    @media (min-width: 64em) {
+      .row .col-1-of-2 {
+        width: calc((100% - 6rem) / 2); } }
+    @media (min-width: 70em) {
+      .row .col-1-of-2 {
+        width: calc((100% - 6rem) / 2); } }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
+    @media (max-width: 42.5em) {
+      .row .col-1-of-3 {
+        width: 100%; } }
+    @media (max-width: 21.5em) {
+      .row .col-1-of-3 {
+        width: 100%; } }
+    @media (min-width: 45.5em) {
+      .row .col-1-of-3 {
+        width: 100%; } }
+    @media (min-width: 50em) {
+      .row .col-1-of-3 {
+        width: 100%; } }
+    @media (min-width: 64em) {
+      .row .col-1-of-3 {
+        width: calc((100% - 2 * 6rem) / 3); } }
+    @media (min-width: 70em) {
+      .row .col-1-of-3 {
+        width: calc((100% - 2 * 6rem) / 3); } }
   .row .col-2-of-3 {
     width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+    @media (max-width: 42.5em) {
+      .row .col-2-of-3 {
+        width: 100%; } }
+    @media (max-width: 21.5em) {
+      .row .col-2-of-3 {
+        width: 100%; } }
+    @media (min-width: 45.5em) {
+      .row .col-2-of-3 {
+        width: 100%; } }
+    @media (min-width: 50em) {
+      .row .col-2-of-3 {
+        width: 100%; } }
+    @media (min-width: 64em) {
+      .row .col-2-of-3 {
+        width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); } }
+    @media (min-width: 70em) {
+      .row .col-2-of-3 {
+        width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); } }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
+    @media (max-width: 42.5em) {
+      .row .col-1-of-4 {
+        width: 100%; } }
+    @media (max-width: 21.5em) {
+      .row .col-1-of-4 {
+        width: 100%; } }
+    @media (min-width: 45.5em) {
+      .row .col-1-of-4 {
+        width: 100%; } }
+    @media (min-width: 50em) {
+      .row .col-1-of-4 {
+        width: 100%; } }
+    @media (min-width: 64em) {
+      .row .col-1-of-4 {
+        width: calc((100% - 3 * 6rem) / 4); } }
+    @media (min-width: 70em) {
+      .row .col-1-of-4 {
+        width: calc((100% - 3 * 6rem) / 4); } }
 
 @keyframes moveInLeft {
   0% {
