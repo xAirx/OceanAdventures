@@ -14,6 +14,8 @@ $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
 
+$default-font-size: 1.6rem;
+
 @mixin clearfix {
   &::after {
     content: "";
@@ -238,55 +240,19 @@ body {
 ///////////////////////////////////////////////////////////////
 /////////////////////////////BUTTONS///////////////////////////
 
-.btnwidewrapper {
-  width: 100%;
-  margin: 0 auto;
-  display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 .btn {
-  &:link,
-  &:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 40px;
-    display: inline-block;
-    /*  border-radius: 100px; */
-    font-weight: 400;
-    transition: all 0.2s;
-    width: 65%;
-    text-align: center;
-    margin-bottom: -15%;
-    margin-top: 14%;
-
-    @include breakpoint(mobileonly) {
-      margin-bottom: 15%;
-      margin-top: 14%;
-      width: 99%;
-    }
-    @include breakpoint(minimobileonly) {
-      margin-bottom: 15%;
-      margin-top: 14%;
-      width: 99%;
-    }
-    @include breakpoint(phablet) {
-      width: 99%;
-      margin-bottom: 15%;
-    }
-    @include breakpoint(tablet) {
-      width: 100%;
-      margin-bottom: 15%;
-    }
-    @include breakpoint(laptop) {
-      width: 50%;
-      display: block;
-      margin-top: 2%;
-      margin-bottom: 2%;
-      margin: 0 auto;
-    }
-  }
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  /*  border-radius: 100px; */
+  font-weight: 400;
+  transition: all 0.2s;
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5%;
 
   &:hover {
     transform: translateY(-3px);
@@ -300,6 +266,7 @@ body {
   }
 
   &--about {
+    color: white;
     text-transform: uppercase;
     text-decoration: none;
     padding: 15px 40px;
@@ -307,63 +274,11 @@ body {
     /*  border-radius: 100px; */
     font-weight: 400;
     transition: all 0.2s;
-
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-      opacity: 1;
-    }
-
-    &:active {
-      transform: translateY(-1px);
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-    }
-  }
-
-  &--footer {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 290px;
-    display: inline-block;
-    font-weight: 400;
-    transition: all 0.2s;
-    margin-bottom: 0px;
-    position: absolute;
-    /* left: 1%; */
-    top: 60%;
-
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-      opacity: 1;
-    }
-
-    &:active {
-      transform: translateY(-1px);
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-    }
-  }
-
-  &--black {
-    background-color: transparent;
-    color: $color-black;
-    opacity: 0.2;
-    border: $color-black 1px solid;
-
-    &--black::after {
-      background-color: $color-black;
-    }
-  }
-
-  &--white {
-    background-color: transparent;
-    color: $color-white;
-    opacity: 0.2;
-    border: $color-white 1px solid;
-
-    &--white::after {
-      background-color: $color-white;
-    }
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 75%;
   }
 }
 
@@ -403,110 +318,15 @@ body {
   @include breakpoint(phablet) {
     clip-path: none;
   }
+}
 
-  &--subheader {
-    margin-bottom: 10%;
-    margin-top: 15%;
-    font-size: 2rem;
-    font-weight: 100;
-    color: white;
-  }
-
-  &--text {
-    text-align: left;
-    font-size: 1.5rem;
-    font-weight: 100;
-    color: white;
-  }
-  &--image1 {
-    @include breakpoint(mobileonly) {
-      position: inherit;
-      left: auto;
-
-      /*    width: 100%; */
-    }
-    @include breakpoint(minimobileonly) {
-      /*    width: 100%; */
-      position: inherit;
-      left: auto;
-    }
-    @include breakpoint(phablet) {
-      position: inherit;
-
-      /*    width: 100%; */
-    }
-    @include breakpoint(tablet) {
-      /*    width: 100%; */
-      position: inherit;
-    }
-  }
-  img {
-    @include breakpoint(laptop) {
-      width: 100%;
-    }
-  }
-
-  &--image2 {
-    @include breakpoint(mobileonly) {
-      position: inherit;
-      left: auto;
-
-      /*    width: 100%; */
-    }
-    @include breakpoint(minimobileonly) {
-      /*    width: 100%; */
-      position: inherit;
-      left: auto;
-    }
-    @include breakpoint(phablet) {
-      position: inherit;
-
-      /*    width: 100%; */
-    }
-    @include breakpoint(laptop) {
-      /*    width: 100%; */
-    }
-  }
-  /* img {
-      width: auto;;
-      @include breakpoint(tablet) {
-        width: auto;
-      }
-      @include breakpoint(phablet) {
-        width: auto;
-      }
-    } */
-
-  &--image3 {
-    @include breakpoint(mobileonly) {
-      position: inherit;
-      left: auto;
-
-      /*    width: 100%; */
-    }
-    @include breakpoint(minimobileonly) {
-      /*    width: 100%; */
-      position: inherit;
-    }
-    @include breakpoint(phablet) {
-      position: inherit;
-
-      /*    width: 100%; */
-    }
-    @include breakpoint(laptop) {
-      /*    width: 100%; */
-    }
-  }
-
-  /*    img {
-
-      @include breakpoint(tablet) {
-        width: auto;
-      }
-      @include breakpoint(phablet) {
-        width: auto;
-      }
-    } */
+.section-cards {
+  clip-path: polygon(0 31%, 100% 0, 100% 69%, 0% 100%);
+  position: relative;
+  margin-top: -30%;
+  background-blend-mode: darken;
+  background-image: url("http://awesomeocean.com/wp-content/uploads/2016/02/Scuba-Diving-Sabah.jpg");
+  background-size: cover;
 }
 
 .overlay {
@@ -524,27 +344,103 @@ body {
   margin-top: 0px;
   padding-top: 400px;
 
-  .heading-secondary {
-    color: white;
-    @include breakpoint(mobileonly) {
-      font-size: 2rem;
-    }
-    @include breakpoint(minimobileonly) {
-      font-size: 2rem;
-    }
+  &--cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    width: 80%;
+  }
+}
+
+.heading-secondary {
+  color: white;
+  @include breakpoint(mobileonly) {
+    font-size: 2rem;
+  }
+  @include breakpoint(minimobileonly) {
+    font-size: 2rem;
+  }
+}
+
+.heading-tertiary {
+  color: white;
+  font-size: $default-font-size;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+.u-margin-bottom-large {
+  margin-bottom: 8rem;
+}
+
+.paragraph {
+  color: white;
+  font-size: $default-font-size;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
   }
 }
 ///////////////////////////////////////////////////////////////
 //////////////////////////////////////////GRID//////////////////////
 
-.imagewrapper {
-  background: red;
+.image-wrapper {
+  margin-top: 40%;
+  /*  background: red;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  position:absolute */
+  position: relative;
+
+  &__image {
+    position: absolute;
+    width: 75%;
+    box-shadow: 0 1.5rem 4rem ($color-black, 0.4);
+    border-radius: 2px;
+    z-index: 10;
+
+    &--p1 {
+      left: 24rem;
+      top: -6rem;
+    }
+    &--p2 {
+      left: 0rem;
+      top: -15rem;
+    }
+    &--p3 {
+      left: 20%;
+      top: 10rem;
+    }
+    &:hover {
+      outline: 1.5rem solid navy;
+      transform: scale(2) translateY(-0.5rem);
+      padding: 10px;
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+      z-index: 20;
+      transition: 0.5s;
+    }
+  }
+
+  &:hover &__image:not(:hover) {
+    transform: scale(0.9);
+  }
+
+  // when hover on image wrapper, select the image that is not hovered.
 }
 
 /* .text-wrapper {
@@ -559,22 +455,9 @@ body {
   }
 
   @include breakpoint(mobileonly) {
-    padding-left: 36%;
-    padding-right: 36%;
+    padding-left: 9%;
+    padding-right: 9%;
     margin-bottom: 5%;
-  }
-  @include breakpoint(phablet) {
-    padding-left: 25%;
-    padding-right: 25%;
-    margin-bottom: 5%;
-  }
-  @include breakpoint(desktop) {
-    margin-bottom: 1%;
-  }
-  @include breakpoint(laptop) {
-    padding-left: 1%;
-    padding-right: 1%;
-    margin-bottom: 1%;
   }
 }
 

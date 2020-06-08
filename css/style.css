@@ -133,14 +133,8 @@ body {
   margin-bottom: 8px;
   letter-spacing: 6px; }
 
-.btnwidewrapper {
-  width: 100%;
-  margin: 0 auto;
-  display: block;
-  padding-top: 30px;
-  padding-bottom: 30px; }
-
-.btn:link, .btn:visited {
+.btn {
+  color: white;
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px 40px;
@@ -148,95 +142,31 @@ body {
   /*  border-radius: 100px; */
   font-weight: 400;
   transition: all 0.2s;
-  width: 65%;
+  width: 85%;
   text-align: center;
-  margin-bottom: -15%;
-  margin-top: 14%; }
-  @media (max-width: 44.5em) {
-    .btn:link, .btn:visited {
-      margin-bottom: 15%;
-      margin-top: 14%;
-      width: 99%; } }
-  @media (max-width: 21.5em) {
-    .btn:link, .btn:visited {
-      margin-bottom: 15%;
-      margin-top: 14%;
-      width: 99%; } }
-  @media (min-width: 44.5em) {
-    .btn:link, .btn:visited {
-      width: 99%;
-      margin-bottom: 15%; } }
-  @media (min-width: 50em) {
-    .btn:link, .btn:visited {
-      width: 100%;
-      margin-bottom: 15%; } }
-  @media (min-width: 64em) {
-    .btn:link, .btn:visited {
-      width: 50%;
-      display: block;
-      margin-top: 2%;
-      margin-bottom: 2%;
-      margin: 0 auto; } }
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  opacity: 1; }
-
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-
-.btn--about {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 15px 40px;
-  display: inline-block;
-  /*  border-radius: 100px; */
-  font-weight: 400;
-  transition: all 0.2s; }
-  .btn--about:hover {
+  margin: 0 auto;
+  margin-top: 5%; }
+  .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     opacity: 1; }
-  .btn--about:active {
+  .btn:active {
     transform: translateY(-1px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-
-.btn--footer {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 15px 290px;
-  display: inline-block;
-  font-weight: 400;
-  transition: all 0.2s;
-  margin-bottom: 0px;
-  position: absolute;
-  /* left: 1%; */
-  top: 60%; }
-  .btn--footer:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    opacity: 1; }
-  .btn--footer:active {
-    transform: translateY(-1px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-
-.btn--black {
-  background-color: transparent;
-  color: #000;
-  opacity: 0.2;
-  border: #000 1px solid; }
-  .btn--black--black::after {
-    background-color: #000; }
-
-.btn--white {
-  background-color: transparent;
-  color: #fff;
-  opacity: 0.2;
-  border: #fff 1px solid; }
-  .btn--white--white::after {
-    background-color: #fff; }
+  .btn--about {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    /*  border-radius: 100px; */
+    font-weight: 400;
+    transition: all 0.2s;
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 75%; }
 
 .section-about {
   position: relative;
@@ -256,102 +186,27 @@ body {
   background-image: url("https://d.newsweek.com/en/full/1506224/water.jpg");
   background-size: cover;
   margin-top: -370px;
-  /*   height: 1620px; */
-  /* img {
-      width: auto;;
-      @include breakpoint(tablet) {
-        width: auto;
-      }
-      @include breakpoint(phablet) {
-        width: auto;
-      }
-    } */
-  /*    img {
+  /*   height: 1620px; */ }
+  @media (max-width: 44.5em) {
+    .section-about {
+      clip-path: none; } }
+  @media (max-width: 21.5em) {
+    .section-about {
+      clip-path: none; } }
+  @media (min-width: 50em) {
+    .section-about {
+      clip-path: none; } }
+  @media (min-width: 44.5em) {
+    .section-about {
+      clip-path: none; } }
 
-      @include breakpoint(tablet) {
-        width: auto;
-      }
-      @include breakpoint(phablet) {
-        width: auto;
-      }
-    } */ }
-  @media (max-width: 44.5em) {
-    .section-about {
-      clip-path: none; } }
-  @media (max-width: 21.5em) {
-    .section-about {
-      clip-path: none; } }
-  @media (min-width: 50em) {
-    .section-about {
-      clip-path: none; } }
-  @media (min-width: 44.5em) {
-    .section-about {
-      clip-path: none; } }
-  .section-about--subheader {
-    margin-bottom: 10%;
-    margin-top: 15%;
-    font-size: 2rem;
-    font-weight: 100;
-    color: white; }
-  .section-about--text {
-    text-align: left;
-    font-size: 1.5rem;
-    font-weight: 100;
-    color: white; }
-  @media (max-width: 44.5em) {
-    .section-about--image1 {
-      position: inherit;
-      left: auto;
-      /*    width: 100%; */ } }
-  @media (max-width: 21.5em) {
-    .section-about--image1 {
-      /*    width: 100%; */
-      position: inherit;
-      left: auto; } }
-  @media (min-width: 44.5em) {
-    .section-about--image1 {
-      position: inherit;
-      /*    width: 100%; */ } }
-  @media (min-width: 50em) {
-    .section-about--image1 {
-      /*    width: 100%; */
-      position: inherit; } }
-  @media (min-width: 64em) {
-    .section-about img {
-      width: 100%; } }
-  @media (max-width: 44.5em) {
-    .section-about--image2 {
-      position: inherit;
-      left: auto;
-      /*    width: 100%; */ } }
-  @media (max-width: 21.5em) {
-    .section-about--image2 {
-      /*    width: 100%; */
-      position: inherit;
-      left: auto; } }
-  @media (min-width: 44.5em) {
-    .section-about--image2 {
-      position: inherit;
-      /*    width: 100%; */ } }
-  @media (min-width: 64em) {
-    .section-about--image2 {
-      /*    width: 100%; */ } }
-  @media (max-width: 44.5em) {
-    .section-about--image3 {
-      position: inherit;
-      left: auto;
-      /*    width: 100%; */ } }
-  @media (max-width: 21.5em) {
-    .section-about--image3 {
-      /*    width: 100%; */
-      position: inherit; } }
-  @media (min-width: 44.5em) {
-    .section-about--image3 {
-      position: inherit;
-      /*    width: 100%; */ } }
-  @media (min-width: 64em) {
-    .section-about--image3 {
-      /*    width: 100%; */ } }
+.section-cards {
+  clip-path: polygon(0 31%, 100% 0, 100% 69%, 0% 100%);
+  position: relative;
+  margin-top: -30%;
+  background-blend-mode: darken;
+  background-image: url("http://awesomeocean.com/wp-content/uploads/2016/02/Scuba-Diving-Sabah.jpg");
+  background-size: cover; }
 
 .overlay {
   background-color: navy;
@@ -366,23 +221,82 @@ body {
   margin: 0 auto;
   margin-top: 0px;
   padding-top: 400px; }
-  .content .heading-secondary {
-    color: white; }
-    @media (max-width: 44.5em) {
-      .content .heading-secondary {
-        font-size: 2rem; } }
-    @media (max-width: 21.5em) {
-      .content .heading-secondary {
-        font-size: 2rem; } }
+  .content--cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    width: 80%; }
 
-.imagewrapper {
-  background: red;
+.heading-secondary {
+  color: white; }
+  @media (max-width: 44.5em) {
+    .heading-secondary {
+      font-size: 2rem; } }
+  @media (max-width: 21.5em) {
+    .heading-secondary {
+      font-size: 2rem; } }
+
+.heading-tertiary {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 100;
+  text-transform: uppercase; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-large {
+  margin-bottom: 8rem; }
+
+.paragraph {
+  color: white;
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.image-wrapper {
+  margin-top: 40%;
+  /*  background: red;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  position:absolute */
+  position: relative; }
+  .image-wrapper__image {
+    position: absolute;
+    width: 75%;
+    box-shadow: 0 1.5rem 4rem #000, 0.4;
+    border-radius: 2px;
+    z-index: 10; }
+    .image-wrapper__image--p1 {
+      left: 24rem;
+      top: -6rem; }
+    .image-wrapper__image--p2 {
+      left: 0rem;
+      top: -15rem; }
+    .image-wrapper__image--p3 {
+      left: 20%;
+      top: 10rem; }
+    .image-wrapper__image:hover {
+      outline: 1.5rem solid navy;
+      transform: scale(2) translateY(-0.5rem);
+      padding: 10px;
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20;
+      transition: 0.5s; }
+  .image-wrapper:hover .image-wrapper__image:not(:hover) {
+    transform: scale(0.9); }
 
 /* .text-wrapper {
   width: 50%;
@@ -396,25 +310,9 @@ body {
 
 @media (max-width: 44.5em) {
   .wrapper-text {
-    padding-left: 36%;
-    padding-right: 36%;
+    padding-left: 9%;
+    padding-right: 9%;
     margin-bottom: 5%; } }
-
-@media (min-width: 44.5em) {
-  .wrapper-text {
-    padding-left: 25%;
-    padding-right: 25%;
-    margin-bottom: 5%; } }
-
-@media (min-width: 70em) {
-  .wrapper-text {
-    margin-bottom: 1%; } }
-
-@media (min-width: 64em) {
-  .wrapper-text {
-    padding-left: 1%;
-    padding-right: 1%;
-    margin-bottom: 1%; } }
 
 .row {
   max-width: 114rem;
