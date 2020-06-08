@@ -28,12 +28,12 @@ $gutter-horizontal: 6rem;
 ////////////////////////////////////////////////
 //////////////// DEBUGGING OVERFLOW ISSUES /////////
 * {
-  /* opacity: 1 !important; */
-  visibility: visibile !important;
+  /* opacity: 1; */
+  visibility: visibile;
 }
 
 * {
-  border: 1px solid #f00 !important;
+  border: 1px solid #f00;
 }
 
 ////////////////////////////////////////////////
@@ -63,12 +63,12 @@ BREAKPOINTS
       @content;
     }
   } @else if $point == phablet {
-    @media (min-width: 45.5em) {
+    @media (min-width: 44.5em) {
       @content;
     }
   } @else if $point == mobileonly {
     // IHPHONe 6 -> xr xs -> 11 -> pixel xl 2
-    @media (max-width: 42.5em) {
+    @media (max-width: 44.5em) {
       @content;
     }
   } @else if $point == minimobileonly {
@@ -351,7 +351,7 @@ body {
 
 .section-about {
   position: relative;
-  clip-path: polygon(
+  /*  clip-path: polygon(
     50% 0%,
     100% 0,
     100% 34%,
@@ -362,7 +362,7 @@ body {
     0 88%,
     0% 34%,
     0 0
-  );
+  ); */
   background-blend-mode: darken;
   background-image: url("https://d.newsweek.com/en/full/1506224/water.jpg");
   background-size: cover;
@@ -398,61 +398,54 @@ body {
   }
   &--image1 {
     position: absolute;
-    top: 44%;
-    left: 79%;
+    top: 47%;
+    left: 63%;
     @include breakpoint(mobileonly) {
-      position: inherit !important;
+      position: inherit;
       left: auto;
 
-      /*    width: 100% !important; */
+      /*    width: 100%; */
     }
     @include breakpoint(minimobileonly) {
-      /*    width: 100% !important; */
-      position: inherit !important;
+      /*    width: 100%; */
+      position: inherit;
       left: auto;
     }
     @include breakpoint(phablet) {
-      position: inherit !important;
+      position: inherit;
 
-      /*    width: 100% !important; */
+      /*    width: 100%; */
     }
     @include breakpoint(tablet) {
-      /*    width: 100% !important; */
-      position: inherit !important;
+      /*    width: 100%; */
+      position: inherit;
     }
   }
-  /* img {
-    width: 370px;
-    @include breakpoint(tablet) {
-      width: auto;
+  img {
+    @include breakpoint(laptop) {
+      width: 100%;
     }
-    @include breakpoint(phablet) {
-      width: auto;
-    }
-  } */
+  }
+
   &--image2 {
     position: absolute;
     top: 49%;
     left: 70%;
     @include breakpoint(mobileonly) {
-      position: inherit !important;
+      position: inherit;
       left: auto;
 
-      /*    width: 100% !important; */
+      /*    width: 100%; */
     }
     @include breakpoint(minimobileonly) {
-      /*    width: 100% !important; */
-      position: inherit !important;
+      /*    width: 100%; */
+      position: inherit;
       left: auto;
     }
     @include breakpoint(phablet) {
-      position: inherit !important;
+      position: inherit;
 
-      /*    width: 100% !important; */
-    }
-    @include breakpoint(tablet) {
-      /*    width: 100% !important; */
-      position: inherit !important;
+      /*    width: 100%; */
     }
   }
   /* img {
@@ -470,24 +463,19 @@ body {
     top: 55%;
     left: 83%;
     @include breakpoint(mobileonly) {
-      position: inherit !important;
+      position: inherit;
       left: auto;
 
-      /*    width: 100% !important; */
+      /*    width: 100%; */
     }
     @include breakpoint(minimobileonly) {
-      /*    width: 100% !important; */
-      position: inherit !important;
+      /*    width: 100%; */
+      position: inherit;
     }
     @include breakpoint(phablet) {
-      position: inherit !important;
+      position: inherit;
 
-      /*    width: 100% !important; */
-    }
-    @include breakpoint(tablet) {
-      /*    width: 100% !important; */
-      position: inherit !important;
-      left: auto;
+      /*    width: 100%; */
     }
   }
 
@@ -540,6 +528,10 @@ body {
   flex-wrap: wrap;
 }
 
+/* .text-wrapper {
+  width: 50%;
+}
+ */
 .wrapper-text {
   @include breakpoint(mobileonly) {
     padding-left: 20%;
@@ -591,7 +583,9 @@ body {
   //Will select any class that ends with col dash
 
   /*   [class$="col-"] */
-
+  .col-1-of-1 {
+    width: 100%;
+  }
   .col-1-of-2 {
     width: calc((100% - #{$gutter-horizontal}) / 2);
     @include breakpoint(mobileonly) {

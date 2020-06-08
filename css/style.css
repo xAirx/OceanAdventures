@@ -1,9 +1,9 @@
 * {
-  /* opacity: 1 !important; */
-  visibility: visibile !important; }
+  /* opacity: 1; */
+  visibility: visibile; }
 
 * {
-  border: 1px solid #f00 !important; }
+  border: 1px solid #f00; }
 
 /*********************
 BREAKPOINTS
@@ -38,13 +38,13 @@ body {
   background-size: cover;
   background-position: top;
   clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 80%, 0 0); }
-  @media (max-width: 42.5em) {
+  @media (max-width: 44.5em) {
     .header {
       height: 95vh; } }
   @media (max-width: 21.5em) {
     .header {
       height: 95vh; } }
-  @media (min-width: 45.5em) {
+  @media (min-width: 44.5em) {
     .header {
       height: 95vh; } }
   @media (min-width: 50em) {
@@ -54,7 +54,7 @@ body {
     position: absolute;
     top: 4rem;
     left: 4rem; }
-    @media (max-width: 42.5em) {
+    @media (max-width: 44.5em) {
       .header__logo-box {
         position: absolute;
         top: 1rem;
@@ -108,7 +108,7 @@ body {
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
     backface-visibility: hidden; }
-    @media (max-width: 42.5em) {
+    @media (max-width: 44.5em) {
       .heading-primary--sub {
         font-size: 10px; } }
     @media (max-width: 21.5em) {
@@ -139,7 +139,7 @@ body {
   text-align: center;
   margin-bottom: -15%;
   margin-top: 14%; }
-  @media (max-width: 42.5em) {
+  @media (max-width: 44.5em) {
     .btn:link, .btn:visited {
       margin-bottom: 15%;
       margin-top: 14%;
@@ -149,7 +149,7 @@ body {
       margin-bottom: 15%;
       margin-top: 14%;
       width: 99%; } }
-  @media (min-width: 45.5em) {
+  @media (min-width: 44.5em) {
     .btn:link, .btn:visited {
       width: 99%;
       margin-bottom: 15%; } }
@@ -220,21 +220,23 @@ body {
 
 .section-about {
   position: relative;
-  clip-path: polygon(50% 0%, 100% 0, 100% 34%, 100% 67%, 100% 80%, 50% 100%, 27% 94%, 0 88%, 0% 34%, 0 0);
+  /*  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 34%,
+    100% 67%,
+    100% 80%,
+    50% 100%,
+    27% 94%,
+    0 88%,
+    0% 34%,
+    0 0
+  ); */
   background-blend-mode: darken;
   background-image: url("https://d.newsweek.com/en/full/1506224/water.jpg");
   background-size: cover;
   margin-top: -370px;
   /*   height: 1620px; */
-  /* img {
-    width: 370px;
-    @include breakpoint(tablet) {
-      width: auto;
-    }
-    @include breakpoint(phablet) {
-      width: auto;
-    }
-  } */
   /* img {
       width: auto;;
       @include breakpoint(tablet) {
@@ -253,7 +255,7 @@ body {
         width: auto;
       }
     } */ }
-  @media (max-width: 42.5em) {
+  @media (max-width: 44.5em) {
     .section-about {
       clip-path: none; } }
   @media (max-width: 21.5em) {
@@ -262,7 +264,7 @@ body {
   @media (min-width: 50em) {
     .section-about {
       clip-path: none; } }
-  @media (min-width: 45.5em) {
+  @media (min-width: 44.5em) {
     .section-about {
       clip-path: none; } }
   .section-about--subheader {
@@ -278,70 +280,64 @@ body {
     color: white; }
   .section-about--image1 {
     position: absolute;
-    top: 44%;
-    left: 79%; }
-    @media (max-width: 42.5em) {
+    top: 47%;
+    left: 63%; }
+    @media (max-width: 44.5em) {
       .section-about--image1 {
-        position: inherit !important;
+        position: inherit;
         left: auto;
-        /*    width: 100% !important; */ } }
+        /*    width: 100%; */ } }
     @media (max-width: 21.5em) {
       .section-about--image1 {
-        /*    width: 100% !important; */
-        position: inherit !important;
+        /*    width: 100%; */
+        position: inherit;
         left: auto; } }
-    @media (min-width: 45.5em) {
+    @media (min-width: 44.5em) {
       .section-about--image1 {
-        position: inherit !important;
-        /*    width: 100% !important; */ } }
+        position: inherit;
+        /*    width: 100%; */ } }
     @media (min-width: 50em) {
       .section-about--image1 {
-        /*    width: 100% !important; */
-        position: inherit !important; } }
+        /*    width: 100%; */
+        position: inherit; } }
+  @media (min-width: 64em) {
+    .section-about img {
+      width: 100%; } }
   .section-about--image2 {
     position: absolute;
     top: 49%;
     left: 70%; }
-    @media (max-width: 42.5em) {
+    @media (max-width: 44.5em) {
       .section-about--image2 {
-        position: inherit !important;
+        position: inherit;
         left: auto;
-        /*    width: 100% !important; */ } }
+        /*    width: 100%; */ } }
     @media (max-width: 21.5em) {
       .section-about--image2 {
-        /*    width: 100% !important; */
-        position: inherit !important;
+        /*    width: 100%; */
+        position: inherit;
         left: auto; } }
-    @media (min-width: 45.5em) {
+    @media (min-width: 44.5em) {
       .section-about--image2 {
-        position: inherit !important;
-        /*    width: 100% !important; */ } }
-    @media (min-width: 50em) {
-      .section-about--image2 {
-        /*    width: 100% !important; */
-        position: inherit !important; } }
+        position: inherit;
+        /*    width: 100%; */ } }
   .section-about--image3 {
     position: absolute;
     top: 55%;
     left: 83%; }
-    @media (max-width: 42.5em) {
+    @media (max-width: 44.5em) {
       .section-about--image3 {
-        position: inherit !important;
+        position: inherit;
         left: auto;
-        /*    width: 100% !important; */ } }
+        /*    width: 100%; */ } }
     @media (max-width: 21.5em) {
       .section-about--image3 {
-        /*    width: 100% !important; */
-        position: inherit !important; } }
-    @media (min-width: 45.5em) {
+        /*    width: 100%; */
+        position: inherit; } }
+    @media (min-width: 44.5em) {
       .section-about--image3 {
-        position: inherit !important;
-        /*    width: 100% !important; */ } }
-    @media (min-width: 50em) {
-      .section-about--image3 {
-        /*    width: 100% !important; */
-        position: inherit !important;
-        left: auto; } }
+        position: inherit;
+        /*    width: 100%; */ } }
 
 .overlay {
   background-color: navy;
@@ -358,7 +354,7 @@ body {
   padding-top: 400px; }
   .content .heading-secondary {
     color: white; }
-    @media (max-width: 42.5em) {
+    @media (max-width: 44.5em) {
       .content .heading-secondary {
         font-size: 2rem; } }
     @media (max-width: 21.5em) {
@@ -374,7 +370,11 @@ body {
   align-items: center;
   flex-wrap: wrap; }
 
-@media (max-width: 42.5em) {
+/* .text-wrapper {
+  width: 50%;
+}
+ */
+@media (max-width: 44.5em) {
   .wrapper-text {
     padding-left: 20%;
     padding-right: 20%; } }
@@ -409,15 +409,17 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+  .row .col-1-of-1 {
+    width: 100%; }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
-    @media (max-width: 42.5em) {
+    @media (max-width: 44.5em) {
       .row .col-1-of-2 {
         width: 100%; } }
     @media (max-width: 21.5em) {
       .row .col-1-of-2 {
         width: 100%; } }
-    @media (min-width: 45.5em) {
+    @media (min-width: 44.5em) {
       .row .col-1-of-2 {
         width: 100%; } }
     @media (min-width: 50em) {
@@ -431,13 +433,13 @@ body {
         width: calc((100% - 6rem) / 2); } }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
-    @media (max-width: 42.5em) {
+    @media (max-width: 44.5em) {
       .row .col-1-of-3 {
         width: 100%; } }
     @media (max-width: 21.5em) {
       .row .col-1-of-3 {
         width: 100%; } }
-    @media (min-width: 45.5em) {
+    @media (min-width: 44.5em) {
       .row .col-1-of-3 {
         width: 100%; } }
     @media (min-width: 50em) {
@@ -451,13 +453,13 @@ body {
         width: calc((100% - 2 * 6rem) / 3); } }
   .row .col-2-of-3 {
     width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
-    @media (max-width: 42.5em) {
+    @media (max-width: 44.5em) {
       .row .col-2-of-3 {
         width: 100%; } }
     @media (max-width: 21.5em) {
       .row .col-2-of-3 {
         width: 100%; } }
-    @media (min-width: 45.5em) {
+    @media (min-width: 44.5em) {
       .row .col-2-of-3 {
         width: 100%; } }
     @media (min-width: 50em) {
@@ -471,13 +473,13 @@ body {
         width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); } }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
-    @media (max-width: 42.5em) {
+    @media (max-width: 44.5em) {
       .row .col-1-of-4 {
         width: 100%; } }
     @media (max-width: 21.5em) {
       .row .col-1-of-4 {
         width: 100%; } }
-    @media (min-width: 45.5em) {
+    @media (min-width: 44.5em) {
       .row .col-1-of-4 {
         width: 100%; } }
     @media (min-width: 50em) {
