@@ -554,11 +554,11 @@ body {
   }
   @include breakpoint(laptop) {
     clip-path: none;
-    margin-top: -442px;
+    margin-top: -536px;
   }
   @include breakpoint(desktop) {
     clip-path: none;
-    margin-top: -442px;
+    margin-top: -536px;
   }
 }
 /////////////////////////// SECTIONS /////////////////////@at-root
@@ -599,7 +599,7 @@ body {
 
 .section-cards {
   z-index: 4;
-  clip-path: polygon(0 31%, 100% 0, 100% 69%, 0% 100%);
+  clip-path: polygon(0 31%, 100% 0, 100% 79%, 0% 100%);
   position: relative;
   margin-top: -486px;
   background-blend-mode: darken;
@@ -625,11 +625,11 @@ body {
   }
   @include breakpoint(laptop) {
     clip-path: polygon(0 31%, 100% 0, 100% 69%, 0% 100%);
-    margin-top: -486px;
+    margin-top: -516px;
   }
   @include breakpoint(desktop) {
     clip-path: polygon(0 31%, 100% 0, 100% 69%, 0% 100%);
-    margin-top: -486px;
+    margin-top: -516px;
   }
 }
 
@@ -666,7 +666,7 @@ body {
     margin: 0 auto;
     margin-top: 0px;
     padding-top: 450px;
-    padding-bottom: 300px;
+    padding-bottom: 465px;
     width: 80%;
     @include breakpoint(mobileonly) {
       padding-top: 100px;
@@ -686,19 +686,20 @@ body {
     }
     @include breakpoint(laptop) {
       padding-top: 450px;
-      padding-bottom: 300px;
+      padding-bottom: 465px;
     }
     @include breakpoint(desktop) {
       padding-top: 450px;
-      padding-bottom: 300px;
+      padding-bottom: 465px;
     }
   }
   &--footer {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     margin: 0 auto;
+    text-align: center;
     margin-top: 0px;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -764,7 +765,7 @@ body {
 .u-margin-bottom-medium {
   margin-bottom: 4rem;
 }
-.u-margin-bottom-large {
+.u-margin-bottom-8 {
   margin-bottom: 10rem;
 }
 
@@ -870,14 +871,13 @@ body {
 .image-wrapper {
   margin-top: -55%;
   margin-left: 10%;
-  /*  background: red;
+
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  position:absolute */
   position: relative;
   @include breakpoint(minimobileonly) {
     margin-top: 50px;
@@ -888,26 +888,23 @@ body {
   @include breakpoint(mobileonly) {
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 22%;
   }
   @include breakpoint(phablet) {
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 22%;
   }
 
   @include breakpoint(tablet) {
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 22%;
   }
   @include breakpoint(laptop) {
-    margin-top: -55% !important;
-    margin-left: 10% !important;
+    margin-top: -55%;
+    margin-left: 10%;
   }
   @include breakpoint(desktop) {
-    margin-top: -55% !important;
-    margin-left: 10% !important;
+    margin-top: -55%;
+    margin-left: 10%;
   }
 
   &__image {
@@ -1031,6 +1028,31 @@ body {
         top: 10rem !important;
       }
     }
+    &:hover {
+      /*  outline: 1.5rem solid navy; */
+      transform: scale(2) translateY(-0.5rem);
+      padding: 10px;
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+      z-index: 20;
+      transition: 0.5s;
+    }
+  }
+}
+
+.image-wrapper2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__image {
+    margin-bottom: 50px;
+    width: 85%;
+    box-shadow: 0 1.5rem 4rem ($color-black, 0.4);
+    border-radius: 2px;
+    z-index: 10;
+
     &:hover {
       /*  outline: 1.5rem solid navy; */
       transform: scale(2) translateY(-0.5rem);
@@ -1188,10 +1210,10 @@ body {
   .col-1-of-4 {
     width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
     @include breakpoint(mobileonly) {
-      width: 100%;
+      width: 50%;
     }
     @include breakpoint(minimobileonly) {
-      width: 100%;
+      width: 50%;
     }
     @include breakpoint(phablet) {
       width: 49%;
