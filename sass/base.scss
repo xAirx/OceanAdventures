@@ -601,7 +601,7 @@ body {
   z-index: 4;
   clip-path: polygon(0 31%, 100% 0, 100% 69%, 0% 100%);
   position: relative;
-  margin-top: -30%;
+  margin-top: -486px;
   background-blend-mode: darken;
   background-image: url("http://awesomeocean.com/wp-content/uploads/2016/02/Scuba-Diving-Sabah.jpg");
   background-size: cover;
@@ -625,11 +625,11 @@ body {
   }
   @include breakpoint(laptop) {
     clip-path: polygon(0 31%, 100% 0, 100% 69%, 0% 100%);
-    margin-top: -40%;
+    margin-top: -486px;
   }
   @include breakpoint(desktop) {
     clip-path: polygon(0 31%, 100% 0, 100% 69%, 0% 100%);
-    margin-top: -35%;
+    margin-top: -486px;
   }
 }
 
@@ -880,24 +880,34 @@ body {
   position:absolute */
   position: relative;
   @include breakpoint(minimobileonly) {
-    display: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 22%;
   }
 
   @include breakpoint(mobileonly) {
-    display: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 22%;
   }
   @include breakpoint(phablet) {
-    display: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 22%;
   }
 
   @include breakpoint(tablet) {
-    display: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 22%;
   }
   @include breakpoint(laptop) {
-    display: block;
+    margin-top: -55% !important;
+    margin-left: 10% !important;
   }
   @include breakpoint(desktop) {
-    display: block;
+    margin-top: -55% !important;
+    margin-left: 10% !important;
   }
 
   &__image {
@@ -907,17 +917,119 @@ body {
     border-radius: 2px;
     z-index: 10;
 
+    @include breakpoint(minimobileonly) {
+      position: relative !important;
+    }
+
+    @include breakpoint(mobileonly) {
+      position: relative !important;
+    }
+    @include breakpoint(phablet) {
+      position: relative !important;
+    }
+
+    @include breakpoint(tablet) {
+      position: absolute !important;
+      display: block;
+    }
+    @include breakpoint(laptop) {
+      position: absolute !important;
+      display: block;
+    }
+    @include breakpoint(desktop) {
+      position: absolute !important;
+      display: block;
+    }
+
     &--p1 {
       left: 24rem;
       top: -6rem;
+      @include breakpoint(minimobileonly) {
+        left: 0 !important;
+        top: 0 !important;
+      }
+
+      @include breakpoint(mobileonly) {
+        left: 0 !important;
+        top: 0 !important;
+      }
+      @include breakpoint(phablet) {
+        left: 0 !important;
+        top: 0 !important;
+      }
+
+      @include breakpoint(tablet) {
+        left: 0 !important;
+        top: 0 !important;
+      }
+      @include breakpoint(laptop) {
+        left: 24rem !important;
+        top: -6rem !important;
+      }
+      @include breakpoint(desktop) {
+        left: 24rem !important;
+        top: -6rem !important;
+      }
     }
     &--p2 {
       left: 0rem;
       top: -15rem;
+      @include breakpoint(minimobileonly) {
+        left: 0 !important;
+        top: 0 !important;
+      }
+
+      @include breakpoint(mobileonly) {
+        left: 0 !important;
+        top: 0 !important;
+      }
+      @include breakpoint(phablet) {
+        left: 0 !important;
+        top: 0 !important;
+      }
+
+      @include breakpoint(tablet) {
+        left: 0 !important;
+        top: 0 !important;
+      }
+      @include breakpoint(laptop) {
+        left: 0rem !important;
+        top: -15rem !important;
+      }
+      @include breakpoint(desktop) {
+        left: 0rem !important;
+        top: -15rem !important;
+      }
     }
     &--p3 {
       left: 20%;
       top: 10rem;
+      @include breakpoint(minimobileonly) {
+        left: 0 !important;
+        top: 0 !important;
+      }
+
+      @include breakpoint(mobileonly) {
+        left: 0 !important;
+        top: 0 !important;
+      }
+      @include breakpoint(phablet) {
+        left: 0 !important;
+        top: 0 !important;
+      }
+
+      @include breakpoint(tablet) {
+        left: 0 !important;
+        top: 0 !important;
+      }
+      @include breakpoint(laptop) {
+        left: 20% !important;
+        top: 10rem !important;
+      }
+      @include breakpoint(desktop) {
+        left: 20% !important;
+        top: 10rem !important;
+      }
     }
     &:hover {
       /*  outline: 1.5rem solid navy; */
