@@ -307,7 +307,7 @@ body {
     /*  border-radius: 100px; */
     font-weight: 400;
     transition: all 0.2s;
-    width: 85%;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
     margin-top: 5%;
@@ -1222,10 +1222,10 @@ body {
       width: 49%;
     }
     @include breakpoint(laptop) {
-      width: 23%;
+      width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
     }
     @include breakpoint(desktop) {
-      width: 23%;
+      width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
     }
   }
 }
