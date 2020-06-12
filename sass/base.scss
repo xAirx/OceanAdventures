@@ -915,26 +915,26 @@ body {
     z-index: 10;
 
     @include breakpoint(minimobileonly) {
-      position: relative !important;
+      position: relative;
     }
 
     @include breakpoint(mobileonly) {
-      position: relative !important;
+      position: relative;
     }
     @include breakpoint(phablet) {
-      position: relative !important;
+      position: relative;
     }
 
     @include breakpoint(tablet) {
-      position: absolute !important;
+      position: relative;
       display: block;
     }
     @include breakpoint(laptop) {
-      position: absolute !important;
+      position: absolute;
       display: block;
     }
     @include breakpoint(desktop) {
-      position: absolute !important;
+      position: absolute;
       display: block;
     }
 
@@ -942,90 +942,90 @@ body {
       left: 24rem;
       top: -6rem;
       @include breakpoint(minimobileonly) {
-        left: 0 !important;
-        top: 0 !important;
+        left: 0;
+        top: 0;
       }
 
       @include breakpoint(mobileonly) {
-        left: 0 !important;
-        top: 0 !important;
+        left: 0;
+        top: 0;
       }
       @include breakpoint(phablet) {
-        left: 0 !important;
-        top: 0 !important;
+        left: 0;
+        top: 0;
       }
 
       @include breakpoint(tablet) {
-        left: 0 !important;
-        top: 0 !important;
+        left: 0;
+        top: 0;
       }
       @include breakpoint(laptop) {
-        left: 24rem !important;
-        top: -6rem !important;
+        left: 24rem;
+        top: -6rem;
       }
       @include breakpoint(desktop) {
-        left: 24rem !important;
-        top: -6rem !important;
+        left: 24rem;
+        top: -6rem;
       }
     }
     &--p2 {
       left: 0rem;
       top: -15rem;
       @include breakpoint(minimobileonly) {
-        left: 0 !important;
-        top: 0 !important;
+        left: 0;
+        top: 0;
       }
 
       @include breakpoint(mobileonly) {
-        left: 0 !important;
-        top: 0 !important;
+        left: 0;
+        top: 0;
       }
       @include breakpoint(phablet) {
-        left: 0 !important;
-        top: 0 !important;
+        left: 0;
+        top: 0;
       }
 
       @include breakpoint(tablet) {
-        left: 0 !important;
-        top: 0 !important;
+        left: 0;
+        top: 0;
       }
       @include breakpoint(laptop) {
-        left: 0rem !important;
-        top: -15rem !important;
+        left: 0rem;
+        top: -15rem;
       }
       @include breakpoint(desktop) {
-        left: 0rem !important;
-        top: -15rem !important;
+        left: 0rem;
+        top: -15rem;
       }
     }
     &--p3 {
       left: 20%;
       top: 10rem;
       @include breakpoint(minimobileonly) {
-        left: 0 !important;
-        top: 0 !important;
+        left: 0;
+        top: 0;
       }
 
       @include breakpoint(mobileonly) {
-        left: 0 !important;
-        top: 0 !important;
+        left: 0;
+        top: 0;
       }
       @include breakpoint(phablet) {
-        left: 0 !important;
-        top: 0 !important;
+        left: 0;
+        top: 0;
       }
 
       @include breakpoint(tablet) {
-        left: 0 !important;
-        top: 0 !important;
+        left: 0;
+        top: 0;
       }
       @include breakpoint(laptop) {
-        left: 20% !important;
-        top: 10rem !important;
+        left: 20%;
+        top: 10rem;
       }
       @include breakpoint(desktop) {
-        left: 20% !important;
-        top: 10rem !important;
+        left: 20%;
+        top: 10rem;
       }
     }
     &:hover {
