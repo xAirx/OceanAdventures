@@ -686,11 +686,11 @@ body {
     }
     @include breakpoint(laptop) {
       padding-top: 450px;
-      padding-bottom: 465px;
+      padding-bottom: 420px;
     }
     @include breakpoint(desktop) {
       padding-top: 450px;
-      padding-bottom: 465px;
+      padding-bottom: 420px;
     }
   }
   &--footer {
