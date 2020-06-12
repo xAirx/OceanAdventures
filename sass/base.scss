@@ -780,6 +780,7 @@ body {
   background-color: white;
   opacity: 0.8;
   width: 100%;
+  text-align: center;
   padding-left: 10px;
   padding-right: 10px;
   color: $color-black;
@@ -807,6 +808,7 @@ body {
   }
 
   &--tour {
+    text-align: center;
     background-color: white;
     opacity: 0.8;
     width: 100%;
