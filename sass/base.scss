@@ -1119,13 +1119,13 @@ body {
   } */
 
   //Will select all where the class attribute starts with col
-  [class^="col-"] {
-    /*  background-color: orangered; */
-    float: left;
-    /* &:not(:last-child) {
+  /* [class^="col-"] { */
+  /*  background-color: orangered; */
+  /*  float: left; */
+  /* &:not(:last-child) {
       margin-right: $gutter-horizontal;
     } */
-  }
+  /*  } */
 
   //Will select any classes that contain this part col
   /*

@@ -887,6 +887,13 @@ body {
   /*  [alt="Logo"]{
 
   } */
+  /* [class^="col-"] { */
+  /*  background-color: orangered; */
+  /*  float: left; */
+  /* &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    } */
+  /*  } */
   /*
   [class*="col-"]  */
   /*   [class$="col-"] */ }
@@ -896,12 +903,6 @@ body {
     content: "";
     display: table;
     clear: both; }
-  .row [class^="col-"] {
-    /*  background-color: orangered; */
-    float: left;
-    /* &:not(:last-child) {
-      margin-right: $gutter-horizontal;
-    } */ }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
     @media (max-width: 44.5em) {
