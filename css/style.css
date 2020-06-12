@@ -255,6 +255,7 @@ body {
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
   .btn--card {
     border: 1px solid black;
+    text-align: center;
     color: black;
     text-transform: uppercase;
     text-decoration: none;
@@ -540,6 +541,7 @@ body {
     bottom: 0px; }
   .content--tours {
     display: flex;
+    text-align: center;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -605,6 +607,7 @@ body {
   background-color: white;
   opacity: 0.8;
   width: 100%;
+  text-align: center;
   padding-left: 10px;
   padding-right: 10px;
   color: #000;
@@ -630,6 +633,7 @@ body {
     font-weight: 100;
     text-transform: uppercase; }
   .card--tour {
+    text-align: center;
     background-color: white;
     opacity: 0.8;
     width: 100%;
