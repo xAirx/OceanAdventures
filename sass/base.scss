@@ -1391,45 +1391,6 @@ body {
   }
 }
 
-.image-wrapper2 {
-  margin-bottom: 55px;
-  width: 100%;
-  box-shadow: 0 1.5rem 4rem #000, 0.4;
-  border-radius: 2px;
-  z-index: 10;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-
-  &__image {
-    width: 32%;
-    height: auto;
-    margin-left: 10px;
-    box-shadow: 0 1.5rem 4rem #000, 0.4;
-    border-radius: 2px;
-    z-index: 10;
-    margin: 0 auto;
-    margin-bottom: 0px;
-
-    &:hover {
-      /*  outline: 1.5rem solid navy; */
-      transform: scale(2) translateY(-0.5rem);
-      padding: 10px;
-      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
-      z-index: 20;
-      transition: 0.5s;
-    }
-  }
-
-  &:hover &__image:not(:hover) {
-    transform: scale(0.9);
-  }
-
-  // when hover on image wrapper, select the image that is not hovered.
-}
-
 /* .text-wrapper {
   width: 50%;
 }
