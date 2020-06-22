@@ -1404,23 +1404,14 @@ body {
   flex-wrap: wrap;
 
   &__image {
-    margin-bottom: 50px;
-    width: 27%;
+    width: 32%;
+    height: auto;
     margin-left: 10px;
-    box-shadow: 0 1.5rem 4rem ($color-black, 0.4);
+    box-shadow: 0 1.5rem 4rem #000, 0.4;
     border-radius: 2px;
     z-index: 10;
     margin: 0 auto;
-    @include breakpoint(minimobileonly) {
-      height: 100px;
-    }
-
-    @include breakpoint(mobileonly) {
-      height: 100px;
-    }
-    @include breakpoint(phablet) {
-      height: 200px;
-    }
+    margin-bottom: 0px;
 
     &:hover {
       /*  outline: 1.5rem solid navy; */
