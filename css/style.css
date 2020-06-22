@@ -1155,17 +1155,16 @@ body {
     box-shadow: 0 1.5rem 4rem #000, 0.4;
     border-radius: 2px;
     z-index: 10;
-    margin: 0 auto;
-    height: 100px; }
+    margin: 0 auto; }
     @media (max-width: 21.5em) {
       .image-wrapper2__image {
-        height: 100px; } }
+        height: 200px; } }
     @media (max-width: 44.5em) {
       .image-wrapper2__image {
-        height: 100px; } }
+        height: 200px; } }
     @media (min-width: 44.5em) {
       .image-wrapper2__image {
-        height: 100px; } }
+        height: 200px; } }
     .image-wrapper2__image:hover {
       /*  outline: 1.5rem solid navy; */
       transform: scale(2) translateY(-0.5rem);
