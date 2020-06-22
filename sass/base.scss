@@ -1411,16 +1411,16 @@ body {
     border-radius: 2px;
     z-index: 10;
     margin: 0 auto;
-
+    height: 100px;
     @include breakpoint(minimobileonly) {
-      height: 90px;
+      height: 100px;
     }
 
     @include breakpoint(mobileonly) {
-      height: 90px;
+      height: 100px;
     }
     @include breakpoint(phablet) {
-      height: 90px;
+      height: 100px;
     }
 
     &:hover {
