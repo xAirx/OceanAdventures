@@ -1412,11 +1412,11 @@ body {
     z-index: 10;
     margin: 0 auto;
     @include breakpoint(minimobileonly) {
-      height: 200px;
+      height: 100px;
     }
 
     @include breakpoint(mobileonly) {
-      height: 200px;
+      height: 100px;
     }
     @include breakpoint(phablet) {
       height: 200px;

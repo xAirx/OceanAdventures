@@ -1158,10 +1158,10 @@ body {
     margin: 0 auto; }
     @media (max-width: 21.5em) {
       .image-wrapper2__image {
-        height: 200px; } }
+        height: 100px; } }
     @media (max-width: 44.5em) {
       .image-wrapper2__image {
-        height: 200px; } }
+        height: 100px; } }
     @media (min-width: 44.5em) {
       .image-wrapper2__image {
         height: 200px; } }
