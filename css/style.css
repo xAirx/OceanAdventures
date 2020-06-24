@@ -824,23 +824,23 @@ body {
     @media (max-width: 21.5em) {
       .image-wrapper__image {
         position: relative;
-        width: 61%;
+        width: 85%;
         margin-bottom: 20px; } }
     @media (max-width: 44.5em) {
       .image-wrapper__image {
         position: relative;
-        width: 61%;
+        width: 85%;
         margin-bottom: 20px; } }
     @media (min-width: 44.5em) {
       .image-wrapper__image {
         position: relative;
-        width: 61%;
+        width: 85%;
         margin-bottom: 20px; } }
     @media (min-width: 50em) {
       .image-wrapper__image {
         position: relative;
         display: block;
-        width: 60%; } }
+        width: 85%; } }
     @media (min-width: 64em) {
       .image-wrapper__image {
         position: absolute;
@@ -1002,16 +1002,19 @@ body {
   width: calc((100% - 2 * 6rem) / 3); }
   @media (max-width: 44.5em) {
     .col-1-of-3 {
-      width: 100%; } }
+      width: 100%;
+      padding-top: 30px; } }
   @media (max-width: 21.5em) {
     .col-1-of-3 {
-      width: 100%; } }
+      width: 100%;
+      padding-top: 30px; } }
   @media (min-width: 44.5em) {
     .col-1-of-3 {
-      width: 100%; } }
+      width: 100%;
+      padding-top: 30px; } }
   @media (min-width: 50em) {
     .col-1-of-3 {
-      width: 100%; } }
+      width: 33%; } }
   @media (min-width: 64em) {
     .col-1-of-3 {
       width: calc((100% - 2 * 6rem) / 3); } }
@@ -1042,18 +1045,18 @@ body {
 
 .col-1-of-4 {
   width: calc((100% - 3 * 6rem) / 4); }
-  @media (max-width: 44.5em) {
+  @media (max-width: 21.5em) {
     .col-1-of-4 {
       width: 50%; } }
-  @media (max-width: 21.5em) {
+  @media (max-width: 44.5em) {
     .col-1-of-4 {
       width: 50%; } }
   @media (min-width: 44.5em) {
     .col-1-of-4 {
-      width: 49%; } }
+      width: 29%; } }
   @media (min-width: 50em) {
     .col-1-of-4 {
-      width: 49%; } }
+      width: 29%; } }
   @media (min-width: 64em) {
     .col-1-of-4 {
       width: calc((100% - 3 * 6rem) / 4); } }
@@ -1194,3 +1197,28 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+  @media (max-width: 21.5em) {
+    .card {
+      position: relative;
+      width: 85%;
+      padding-bottom: 20px;
+      margin: 0 auto; } }
+  @media (max-width: 44.5em) {
+    .card {
+      position: relative;
+      width: 85%;
+      padding-bottom: 20px;
+      margin: 0 auto; } }
+  @media (min-width: 44.5em) {
+    .card {
+      position: relative;
+      width: 85%;
+      padding-bottom: 20px;
+      margin: 0 auto; } }
+  @media (min-width: 50em) {
+    .card {
+      position: relative;
+      display: block;
+      width: 85%;
+      margin: 0 auto;
+      padding-bottom: 20px; } }
