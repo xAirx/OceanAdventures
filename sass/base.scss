@@ -362,6 +362,29 @@ $color-black: #000;
 $color-grey-light-1: #f7f7f7;
 //GRID
 
+////////////////////////////////////////
+////////////////////////////////////////
+////////  COLORS  //////
+$color-primary: #55c57a;
+$color-primary-light: #4ad6ea;
+$color-primary-dark: #8bfafd;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
@@ -596,27 +619,7 @@ body {
     color: white;
     margin-bottom: 48px;
     letter-spacing: 6px;
-    margin-top: 400px;
-    @include breakpoint(mobileonly) {
-      margin-top: 50px;
-    }
-    @include breakpoint(minimobileonly) {
-      margin-top: 50px;
-    }
-
-    @include breakpoint(phablet) {
-      margin-top: 50px;
-    }
-
-    @include breakpoint(tablet) {
-      margin-top: 50px;
-    }
-    @include breakpoint(laptop) {
-      margin-top: 400px;
-    }
-    @include breakpoint(desktop) {
-      margin-top: 400px;
-    }
+    margin-top: 120px;
   }
 }
 ///////////////////////////////////////////////////////////////
@@ -734,114 +737,6 @@ body {
       box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
     }
   }
-
-  &--card {
-    border: 1px solid black;
-    text-align: center;
-    color: black;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 40px;
-    display: inline-block;
-    /*  border-radius: 100px; */
-    font-weight: 100;
-    transition: all 0.2s;
-    width: 85%;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 5%;
-
-    @include breakpoint(mobileonly) {
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      margin-bottom: 10%;
-    }
-    @include breakpoint(minimobileonly) {
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      margin-bottom: 10%;
-    }
-
-    @include breakpoint(phablet) {
-      margin-bottom: 10%;
-    }
-
-    @include breakpoint(tablet) {
-      margin-bottom: 20%;
-    }
-    @include breakpoint(laptop) {
-      display: block;
-    }
-    @include breakpoint(desktop) {
-      display: block;
-    }
-
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-      opacity: 1;
-    }
-
-    &:active {
-      transform: translateY(-1px);
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-    }
-  }
-  &--tours {
-    border: 1px solid white;
-
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 40px;
-    display: inline-block;
-    /*  border-radius: 100px; */
-    font-weight: 100;
-    transition: all 0.2s;
-    width: 85%;
-    text-align: center;
-    margin: 0 auto;
-
-    @include breakpoint(mobileonly) {
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      margin-bottom: 10%;
-    }
-    @include breakpoint(minimobileonly) {
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      margin-bottom: 10%;
-    }
-
-    @include breakpoint(phablet) {
-      margin-bottom: 10%;
-    }
-
-    @include breakpoint(tablet) {
-      margin-bottom: 20%;
-    }
-    @include breakpoint(laptop) {
-      display: block;
-    }
-    @include breakpoint(desktop) {
-      display: block;
-    }
-
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-      opacity: 1;
-    }
-
-    &:active {
-      transform: translateY(-1px);
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-    }
-  }
 }
 
 ///////////////////////////////////////////////////////////////
@@ -885,10 +780,12 @@ body {
   background-image: url("https://d.newsweek.com/en/full/1506224/water.jpg");
   background-size: cover;
 
-  margin-top: -400px;
+  /*  margin-top: -400px;
+  padding-top: 180px; */
+  /* padding-bottom: 200px; */
   /*   height: 1620px; */
 
-  @include breakpoint(mobileonly) {
+  /*  @include breakpoint(mobileonly) {
     clip-path: none;
     margin-top: 0px;
   }
@@ -911,7 +808,7 @@ body {
   @include breakpoint(desktop) {
     clip-path: none;
     margin-top: -536px;
-  }
+  } */
 }
 /////////////////////////// SECTIONS /////////////////////@at-root
 
@@ -1010,7 +907,7 @@ body {
   margin-top: 0px;
   padding-top: 400px;
 
-  &--cards {
+  /*  &--cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1044,7 +941,7 @@ body {
       padding-top: 450px;
       padding-bottom: 420px;
     }
-  }
+  } */
   &--footer {
     /* display: flex;
     flex-wrap: wrap;
@@ -1067,30 +964,6 @@ body {
     margin: 0 auto;
     margin-top: 0px;
     width: 80%;
-    @include breakpoint(mobileonly) {
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
-    @include breakpoint(minimobileonly) {
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
-    @include breakpoint(phablet) {
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
-    @include breakpoint(tablet) {
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
-    @include breakpoint(laptop) {
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
-    @include breakpoint(desktop) {
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
   }
 }
 
@@ -1130,93 +1003,6 @@ body {
   }
 }
 
-.card {
-  background-color: white;
-  opacity: 0.8;
-  width: 100%;
-  text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: $color-black;
-  margin-left: 1%;
-  margin-right: 1%;
-  box-shadow: 0 1rem 2rem rgba($color-black, 1);
-  z-index: 10;
-  @include breakpoint(mobileonly) {
-    margin-bottom: 10%;
-  }
-  @include breakpoint(minimobileonly) {
-    margin-bottom: 10%;
-  }
-  @include breakpoint(tablet) {
-    margin-bottom: 10%;
-  }
-  @include breakpoint(phablet) {
-    margin-bottom: 10%;
-  }
-  .heading-tertiary {
-    color: $color-black;
-    font-size: $default-font-size;
-    font-weight: 100;
-    text-transform: uppercase;
-  }
-
-  &--tour {
-    text-align: center;
-    background-color: white;
-    opacity: 0.8;
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: $color-black;
-    margin-left: 1%;
-    margin-right: 1%;
-    box-shadow: 0 1rem 2rem rgba($color-black, 1);
-    z-index: 10;
-    @include breakpoint(mobileonly) {
-      margin-bottom: 10%;
-    }
-    @include breakpoint(minimobileonly) {
-      margin-bottom: 10%;
-    }
-    @include breakpoint(tablet) {
-      margin-bottom: 10%;
-    }
-    @include breakpoint(phablet) {
-      margin-bottom: 10%;
-    }
-    .heading-tertiary {
-      color: $color-black;
-      font-size: $default-font-size;
-      font-weight: 100;
-      text-transform: uppercase;
-    }
-
-    .minicard {
-      margin-bottom: 40%;
-    }
-  }
-}
-
-.cardimage {
-  display: inline-block;
-  width: 15%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10%;
-  margin-top: 10%;
-  display: block;
-}
-
-.minicard {
-  color: black;
-  font-size: $default-font-size;
-  margin-bottom: 20%;
-
-  &:not(:last-child) {
-    margin-bottom: 3rem;
-  }
-}
 ///////////////////////////////////////////////////////////////
 //////////////////////////////////////////GRID//////////////////////
 
@@ -1261,33 +1047,42 @@ body {
 
   &__image {
     position: absolute;
-    width: 75%;
+    width: 90%;
     box-shadow: 0 1.5rem 4rem ($color-black, 0.4);
     border-radius: 2px;
     z-index: 10;
 
     @include breakpoint(minimobileonly) {
       position: relative;
+      width: 61%;
+      margin-bottom: 20px;
     }
 
     @include breakpoint(mobileonly) {
       position: relative;
+      width: 61%;
+      margin-bottom: 20px;
     }
     @include breakpoint(phablet) {
       position: relative;
+      width: 61%;
+      margin-bottom: 20px;
     }
 
     @include breakpoint(tablet) {
       position: relative;
       display: block;
+      width: 60%;
     }
     @include breakpoint(laptop) {
       position: absolute;
       display: block;
+      width: 100%;
     }
     @include breakpoint(desktop) {
       position: absolute;
       display: block;
+      width: 90%;
     }
 
     &--p1 {
@@ -1312,7 +1107,7 @@ body {
         top: 0;
       }
       @include breakpoint(laptop) {
-        left: 24rem;
+        left: 20rem;
         top: -6rem;
       }
       @include breakpoint(desktop) {
@@ -1342,8 +1137,8 @@ body {
         top: 0;
       }
       @include breakpoint(laptop) {
-        left: 0rem;
-        top: -15rem;
+        left: 5rem;
+        top: -14rem;
       }
       @include breakpoint(desktop) {
         left: 0rem;
@@ -1418,136 +1213,111 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  margin-top: 0px;
+  text-align: center;
+  margin-top: 0px;
+  /*   padding-top: 100px;
+  padding-bottom: 100px; */
+  width: 80%;
+  padding-bottom: 250px;
 
-  //gutter
-
-  /* &:last-child {
-    margin-bottom: 0;
-  } */
-
-  //Without not it will select last child.
-  // not does the opposite and takes everthing except the last child.
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
   }
+}
 
-  @include clearfix;
-
-  /* [src] */
-
-  /*  [alt="Logo"]{
-
-  } */
-
-  //Will select all where the class attribute starts with col
-  /* [class^="col-"] { */
-  /*  background-color: orangered; */
-  /*  float: left; */
-  /* &:not(:last-child) {
-      margin-right: $gutter-horizontal;
-    } */
-  /*  } */
-
-  //Will select any classes that contain this part col
-  /*
-  [class*="col-"]  */
-
-  //Will select any class that ends with col dash
-
-  /*   [class$="col-"] */
-
-  .col-1-of-2 {
+.col-1-of-2 {
+  width: calc((100% - #{$gutter-horizontal}) / 2);
+  @include breakpoint(mobileonly) {
+    width: 100%;
+  }
+  @include breakpoint(minimobileonly) {
+    width: 100%;
+  }
+  @include breakpoint(phablet) {
+    width: 100%;
+  }
+  @include breakpoint(tablet) {
+    width: 100%;
+  }
+  @include breakpoint(laptop) {
     width: calc((100% - #{$gutter-horizontal}) / 2);
-    @include breakpoint(mobileonly) {
-      width: 100%;
-    }
-    @include breakpoint(minimobileonly) {
-      width: 100%;
-    }
-    @include breakpoint(phablet) {
-      width: 100%;
-    }
-    @include breakpoint(tablet) {
-      width: 100%;
-    }
-    @include breakpoint(laptop) {
-      width: calc((100% - #{$gutter-horizontal}) / 2);
-    }
-    @include breakpoint(desktop) {
-      width: calc((100% - #{$gutter-horizontal}) / 2);
-    }
   }
+  @include breakpoint(desktop) {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+  }
+}
 
-  .col-1-of-3 {
+.col-1-of-3 {
+  width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+  @include breakpoint(mobileonly) {
+    width: 100%;
+  }
+  @include breakpoint(minimobileonly) {
+    width: 100%;
+  }
+  @include breakpoint(phablet) {
+    width: 100%;
+  }
+  @include breakpoint(tablet) {
+    width: 100%;
+  }
+  @include breakpoint(laptop) {
     width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
-    @include breakpoint(mobileonly) {
-      width: 100%;
-    }
-    @include breakpoint(minimobileonly) {
-      width: 100%;
-    }
-    @include breakpoint(phablet) {
-      width: 100%;
-    }
-    @include breakpoint(tablet) {
-      width: 100%;
-    }
-    @include breakpoint(laptop) {
-      width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
-    }
-    @include breakpoint(desktop) {
-      width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
-    }
   }
+  @include breakpoint(desktop) {
+    width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+  }
+}
 
-  .col-2-of-3 {
+.col-2-of-3 {
+  width: calc(
+    2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
+  );
+  @include breakpoint(mobileonly) {
+    width: 100%;
+  }
+  @include breakpoint(minimobileonly) {
+    width: 100%;
+  }
+  @include breakpoint(phablet) {
+    width: 100%;
+  }
+  @include breakpoint(tablet) {
+    width: 100%;
+  }
+  @include breakpoint(laptop) {
     width: calc(
       2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
     );
-    @include breakpoint(mobileonly) {
-      width: 100%;
-    }
-    @include breakpoint(minimobileonly) {
-      width: 100%;
-    }
-    @include breakpoint(phablet) {
-      width: 100%;
-    }
-    @include breakpoint(tablet) {
-      width: 100%;
-    }
-    @include breakpoint(laptop) {
-      width: calc(
-        2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
-      );
-    }
-    @include breakpoint(desktop) {
-      width: calc(
-        2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
-      );
-    }
   }
+  @include breakpoint(desktop) {
+    width: calc(
+      2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
+    );
+  }
+}
 
-  .col-1-of-4 {
+.col-1-of-4 {
+  width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+  @include breakpoint(mobileonly) {
+    width: 50%;
+  }
+  @include breakpoint(minimobileonly) {
+    width: 50%;
+  }
+  @include breakpoint(phablet) {
+    width: 49%;
+  }
+  @include breakpoint(tablet) {
+    width: 49%;
+  }
+  @include breakpoint(laptop) {
     width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
-    @include breakpoint(mobileonly) {
-      width: 50%;
-    }
-    @include breakpoint(minimobileonly) {
-      width: 50%;
-    }
-    @include breakpoint(phablet) {
-      width: 49%;
-    }
-    @include breakpoint(tablet) {
-      width: 49%;
-    }
-    @include breakpoint(laptop) {
-      width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
-    }
-    @include breakpoint(desktop) {
-      width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
-    }
+  }
+  @include breakpoint(desktop) {
+    width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
   }
 }
 
@@ -1600,5 +1370,194 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+
+///////////
+
+.card {
+  // FUNCTIONALITY
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+  width: 100%;
+
+  &--photogallery {
+    width: 100%;
+    padding-right: 5px;
+  }
+
+  &__side {
+    height: 52rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &--front {
+      /*  background-color: white; */
+      color: white;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          darkslategreen,
+          #303dff
+        );
+      }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          darkslategreen,
+          #303dff
+        );
+      }
+
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          darkslategreen,
+          #303dff
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  // FRONT SIDE STYLING
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+    &--1 {
+      background-image: linear-gradient(to right bottom, blue, darkslategrey),
+        url("https://www.thesprucepets.com/thmb/q6K_TdrjemUXrPuxbbxUkbK2meU=/1280x850/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/step_7-pufferfish-596f732b6f53ba0011f517a1.JPG");
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        ),
+        url("https://www.thesprucepets.com/thmb/q6K_TdrjemUXrPuxbbxUkbK2meU=/1280x850/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/step_7-pufferfish-596f732b6f53ba0011f517a1.JPG");
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ),
+        url("https://www.thesprucepets.com/thmb/q6K_TdrjemUXrPuxbbxUkbK2meU=/1280x850/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/step_7-pufferfish-596f732b6f53ba0011f517a1.JPG");
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(to right bottom);
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.85),
+        rgba($color-primary-dark, 0.85)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary-light, 0.85),
+        rgba($color-tertiary-dark, 0.85)
+      );
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+      }
+    }
+  }
+
+  // FRONT SIDE STYLING
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
   }
 }
